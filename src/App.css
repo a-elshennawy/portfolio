@@ -23,12 +23,16 @@ img {
   width: 100%;
 }
 
+body {
+  height: 100vh;
+}
+
 .header {
   padding: 50px 0px;
   position: relative;
 
   .bgLayer {
-    background-image: url("/images/headerBG.jpg");
+    background-image: url("/images/headerBG.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -226,7 +230,7 @@ img {
   position: relative;
 
   .bgLayer {
-    background-image: url("/images/samplesBG.jpg");
+    background-image: url("/images/samplesBG.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
