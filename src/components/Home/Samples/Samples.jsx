@@ -13,7 +13,7 @@ export default function Samples() {
               <div className="fullHeader col-12">
                 <h3>- full web apps -</h3>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/coffeeShop.jpeg" alt="" />
                 </div>
@@ -39,7 +39,7 @@ export default function Samples() {
                   </button>
                 </div>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/watchesShop.jpeg" alt="" />
                 </div>
@@ -63,7 +63,7 @@ export default function Samples() {
                   </button>
                 </div>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/dayapp.jpeg" alt="" />
                 </div>
@@ -83,7 +83,7 @@ export default function Samples() {
                   </button>
                 </div>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/gym.jpeg" alt="" />
                 </div>
@@ -107,7 +107,7 @@ export default function Samples() {
                   </button>
                 </div>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/sshop.jpeg" alt="" />
                 </div>
@@ -134,7 +134,7 @@ export default function Samples() {
               <div className="landingHeader col-12">
                 <h3>- landing pages -</h3>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/hurst.jpeg" alt="" />
                 </div>
@@ -156,7 +156,7 @@ export default function Samples() {
                   </button>
                 </div>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/confer.jpeg" alt="" />
                 </div>
@@ -181,7 +181,7 @@ export default function Samples() {
                   </button>
                 </div>
               </div>
-              <div className="appCard col-lg-3 col-10 row">
+              <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
                   <img src="/images/fixera.jpeg" alt="" />
                 </div>

@@ -17,15 +17,15 @@ export default function Header() {
           <div className="insider row">
             <div className="imgSide col-lg-4 col-11">
               <div className="img">
-                <img src="/images/me.jpg" alt="personal picture" />
+                <img src="/images/me.webp" alt="personal picture" />
               </div>
             </div>
             <div className="textSide col-lg-5 col-11 row">
-              <div className="textSideHead col-10">
+              <div className="textSideHead col-12">
                 <h2>i'm ahmed elshennawy,</h2>
                 <h5>front-end Devoloper (React)</h5>
               </div>
-              <div className="textSideContent col-10">
+              <div className="textSideContent col-12">
                 <p>
                   Junior Frontend Developer with a strong foundation in HTML,
                   CSS, JavaScript, and React. Experienced in building responsive
@@ -35,7 +35,7 @@ export default function Header() {
                   creating user-friendly, visually appealing web experiences.
                 </p>
               </div>
-              <div className="contact col-10 row">
+              <div className="contact col-12 row">
                 <div className="contactHeader col-12">
                   <h3>contacts me :</h3>
                 </div>
