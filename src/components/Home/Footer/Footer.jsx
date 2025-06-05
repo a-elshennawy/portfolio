@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="container-fluid">
           <div className="footerInner">
             <p>
-              design by&nbsp;
+              designed by&nbsp;
               <Link
                 to={"https://www.linkedin.com/in/shennawyz"}
                 target="_blank"
