@@ -53,7 +53,7 @@ export default function Samples() {
                   </p>
                   <button className="goBtn">
                     <Link to={"https://elsokarya.net/"} target="_blank">
-                      check live webApp
+                      live webApp
                     </Link>
                   </button>
                   <button className="payBtn">

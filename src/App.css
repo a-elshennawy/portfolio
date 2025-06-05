@@ -447,8 +447,7 @@ img {
   left: 0;
   right: 0;
   padding: 10px 0px;
-  background-image: linear-gradient(to right, #000, #000275);
-  box-shadow: 0 0 10px #0104bb;
+  background-color: #000275;
 
   .footerInner {
     text-align: start;
