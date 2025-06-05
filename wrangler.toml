@@ -1,6 +1,0 @@
-name = "ahmed-elshennawy"
-compatibility_date = "2025-06-05"
-main = false  
-
-[site]
-bucket = "./dist"
