@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faGithub,
   faInstagram,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Header() {
@@ -69,6 +70,14 @@ export default function Header() {
                       <FontAwesomeIcon icon={faInstagram} />
                     </Link>
                   </span>
+                  <span className="col-2 discord">
+                    <Link
+                      to={"https://discordapp.com/users/1184992200686309486s"}
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faDiscord} />
+                    </Link>
+                  </span>
                   <span className="col-2 gmail">
                     <a
                       href="mailto:ahmedshennawy997@gmail.com"
@@ -85,7 +94,6 @@ export default function Header() {
                   </span>
                 </div>
               </div>
-
               <div className="cv col-10">
                 <button className="cvBtn">
                   <Link

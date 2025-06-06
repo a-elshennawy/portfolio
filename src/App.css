@@ -173,6 +173,24 @@ body {
             }
           }
 
+          .discord {
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            a {
+              color: #000;
+            }
+
+            &:hover {
+              background-color: #b900d1;
+
+              a {
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+              }
+            }
+          }
+
           .gmail {
             background-color: #fff;
             transition: all 0.3s ease-in-out;
