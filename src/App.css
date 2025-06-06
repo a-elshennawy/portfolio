@@ -465,29 +465,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.footer {
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px 0px;
-  background-color: #000275;
-
-  .footerInner {
-    text-align: start;
-
-    p {
-      color: #fff;
-
-      a {
-        color: #fff;
-        filter: drop-shadow(0 0 10px #fff);
-        text-decoration: none;
-      }
-    }
-  }
-}
-
 .upBtn {
   position: fixed;
   bottom: 5%;
