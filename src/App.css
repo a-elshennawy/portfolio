@@ -334,14 +334,20 @@ img {
         animation-range: entry 0%;
 
         .img {
-          padding: 0;
+          padding: 10px;
+
+          img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+          }
         }
 
         .details {
           padding: 10px 5px;
+          text-align: center;
 
-          p {
-            padding: 5px 0px !important;
+          h3 {
+            margin-bottom: 10px !important;
             color: #fff;
           }
 
@@ -424,14 +430,20 @@ img {
         animation-range: entry 0%;
 
         .img {
-          padding: 0;
+          padding: 10px;
+
+          img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+          }
         }
 
         .details {
           padding: 10px 5px;
+          text-align: center;
 
-          p {
-            padding: 5px 0px !important;
+          h3 {
+            margin-bottom: 10px !important;
             color: #fff;
           }
 
@@ -510,7 +522,7 @@ img {
 /* animations */
 @keyframes fromBottom {
   from {
-    transform: translateY(50px);
+    transform: translateY(100px);
     opacity: 0;
   }
 
