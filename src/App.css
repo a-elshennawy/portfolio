@@ -125,6 +125,9 @@ img {
 
             &:hover {
               background-color: #33ff00;
+              box-shadow: 0 0 10px #33ff00;
+              margin: 0px 5px;
+              transform: scale(1.1);
 
               a {
                 color: #fff;
@@ -143,6 +146,9 @@ img {
 
             &:hover {
               background-color: #397eff;
+              box-shadow: 0 0 10px #397eff;
+              margin: 0px 5px;
+              transform: scale(1.1);
 
               a {
                 color: #fff;
@@ -160,6 +166,9 @@ img {
 
             &:hover {
               background-color: #000;
+              box-shadow: 0 0 10px #fff;
+              margin: 0px 5px;
+              transform: scale(1.1);
 
               a {
                 color: #fff;
@@ -178,6 +187,9 @@ img {
 
             &:hover {
               background-image: linear-gradient(to right, #ff0000, #c300ff);
+              box-shadow: 0 0 10px #c300ff;
+              margin: 0px 5px;
+              transform: scale(1.1);
 
               a {
                 color: #fff;
@@ -196,6 +208,9 @@ img {
 
             &:hover {
               background-color: #b900d1;
+              box-shadow: 0 0 10px #b900d1;
+              margin: 0px 5px;
+              transform: scale(1.1);
 
               a {
                 color: #fff;
@@ -214,6 +229,9 @@ img {
 
             &:hover {
               background-color: #fd0000;
+              box-shadow: 0 0 10px #fd0000;
+              margin: 0px 5px;
+              transform: scale(1.1);
 
               a {
                 color: #fff;
