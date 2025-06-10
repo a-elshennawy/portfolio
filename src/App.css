@@ -31,7 +31,7 @@ img {
   left: 0%;
   right: 0%;
   width: 10px;
-  height: 10px;
+  height: 2px;
   background-color: #fff;
   z-index: 111;
   animation: progressBar linear forwards;
