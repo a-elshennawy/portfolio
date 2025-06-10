@@ -47,11 +47,11 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     position: absolute;
+    background-attachment: fixed;
     inset: 0;
     z-index: -111;
-    filter: brightness(50%);
+    filter: brightness(30%);
   }
 
   .insider {

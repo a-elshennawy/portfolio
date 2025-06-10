@@ -19,7 +19,11 @@ export default function Header() {
           <div className="insider row">
             <div className="imgSide col-lg-4 col-11">
               <div className="img">
-                <img src="/images/me.webp" alt="personal picture" />
+                <img
+                  src="/images/me.webp"
+                  alt="personal picture"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="textSide col-lg-5 col-11 row">

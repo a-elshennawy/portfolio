@@ -15,7 +15,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/coffeeShop.jpeg" alt="" />
+                  <img src="/images/coffeeShop.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -41,7 +41,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/watchesShop.jpeg" alt="" />
+                  <img src="/images/watchesShop.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -65,7 +65,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/dayapp.jpeg" alt="" />
+                  <img src="/images/dayapp.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -85,7 +85,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/gym.jpeg" alt="" />
+                  <img src="/images/gym.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -109,7 +109,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/sshop.jpeg" alt="" />
+                  <img src="/images/sshop.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -136,7 +136,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/hurst.jpeg" alt="" />
+                  <img src="/images/hurst.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -158,7 +158,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/confer.jpeg" alt="" />
+                  <img src="/images/confer.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
@@ -183,7 +183,7 @@ export default function Samples() {
               </div>
               <div className="appCard col-lg-3 col-12 row">
                 <div className="img col-12">
-                  <img src="/images/fixera.jpeg" alt="" />
+                  <img src="/images/fixera.jpeg" alt="" loading="lazy" />
                 </div>
                 <div className="details col-12">
                   <p>
