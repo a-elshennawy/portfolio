@@ -25,8 +25,17 @@ img {
   display: block;
 }
 
-body {
-  height: 100vh;
+.progressBar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  z-index: 111;
+  animation: progressBar linear forwards;
+  animation-timeline: scroll();
 }
 
 .header {
@@ -488,5 +497,18 @@ body {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes progressBar {
+  0% {
+    width: 10px;
+  }
+  50% {
+    background-color: #f2ff39;
+  }
+  100% {
+    width: 100%;
+    background-color: #33ff00;
   }
 }

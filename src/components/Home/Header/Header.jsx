@@ -13,6 +13,7 @@ export default function Header() {
   return (
     <>
       <div className="header">
+        <div className="progressBar"></div>
         <div className="bgLayer"></div>
         <div className="container-fluid">
           <div className="insider row">
