@@ -30,7 +30,7 @@ img {
   top: 0%;
   left: 0%;
   right: 0%;
-  width: 10px;
+  width: 0px;
   height: 2px;
   background-color: #fff;
   z-index: 111;
@@ -103,11 +103,13 @@ img {
             padding: 5px;
             width: fit-content;
             cursor: pointer;
+            border-radius: 20px;
 
             a {
               text-decoration: none;
               display: inline;
-              margin: 0px 5px;
+              padding: 5px;
+              border-radius: 20px;
               font-weight: bolder;
             }
           }
@@ -502,7 +504,7 @@ img {
 
 @keyframes progressBar {
   0% {
-    width: 10px;
+    width: 0px;
   }
   50% {
     background-color: #f2ff39;
