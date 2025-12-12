@@ -1,7 +1,9 @@
 "use client";
+import "./Home.css";
 import { useEffect } from "react";
-import ScrollBar from "@/components/UI/ScrollBar/ScrollBar";
-import Hero from "@/components/Sections/Hero/Hero";
+import { motion } from "motion/react";
+import TextType from "@/components/UI/TextType/TextType";
+import FadeContent from "@/components/UI/FadeContent/FadeContent";
 
 export default function Home() {
   useEffect(() => {
@@ -12,8 +14,32 @@ export default function Home() {
   }, []);
   return (
     <>
-      <ScrollBar />
-      <Hero />
+      <section className="home pt-0 text-center z-2">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="mb-2"
+        >
+          function meets finesse.
+        </motion.h1>
+        <FadeContent
+          blur={true}
+          duration={1500}
+          easing="ease-out"
+          initialOpacity={0}
+        >
+          <TextType
+            text={["meet shennawy, pixel perfectionist."]}
+            style={{ fontSize: "1.5rem" }}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            loop={false}
+            cursorCharacter="_"
+          />
+        </FadeContent>
+      </section>
     </>
   );
 }

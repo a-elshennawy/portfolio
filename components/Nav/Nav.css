@@ -1,0 +1,34 @@
+.navContainer {
+    height: 100dvh;
+    .navDock {
+        width: fit-content;
+        position: fixed;
+        top: 0.625rem;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0.313rem 0.625rem;
+        border-radius: 0.938rem;
+        z-index: 1111;
+
+        .navItem {
+            padding: 0.313rem 0.625rem;
+            width: fit-content !important;
+            border-radius: 0.625rem;
+            color: var(--secondary);
+            text-transform: capitalize;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.313rem var(--secondary));
+            }
+        }
+
+        .active {
+            background-color: var(--secondary);
+            color: var(--primary);
+            filter: drop-shadow(0 0 0.313rem var(--secondary));
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
