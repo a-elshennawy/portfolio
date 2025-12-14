@@ -1,14 +1,14 @@
 .navContainer {
-    height: 100dvh;
+    padding: 0.625rem 0rem;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+
     .navDock {
-        width: fit-content;
-        position: fixed;
-        top: 0.625rem;
-        left: 50%;
-        transform: translate(-50%);
+        width: fit-content !important;
         padding: 0.313rem 0.625rem;
         border-radius: 0.938rem;
-        z-index: 1111;
+        backdrop-filter: blur(10px);
 
         .navItem {
             padding: 0.313rem 0.625rem;

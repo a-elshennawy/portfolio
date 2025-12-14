@@ -1,9 +1,10 @@
 "use client";
 import "./Home.css";
 import { useEffect } from "react";
-import { motion } from "motion/react";
 import TextType from "@/components/UI/TextType/TextType";
 import FadeContent from "@/components/UI/FadeContent/FadeContent";
+import { motion } from "motion/react";
+import { GridScan } from "@/components/UI/GridScan/GridScan";
 
 export default function Home() {
   useEffect(() => {
@@ -14,31 +15,47 @@ export default function Home() {
   }, []);
   return (
     <>
-      <section className="home pt-0 text-center z-2">
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="mb-2"
-        >
-          function meets finesse.
-        </motion.h1>
-        <FadeContent
-          blur={true}
-          duration={1500}
-          easing="ease-out"
-          initialOpacity={0}
-        >
-          <TextType
-            text={["meet shennawy, pixel perfectionist."]}
-            style={{ fontSize: "1.5rem" }}
-            typingSpeed={75}
-            pauseDuration={1500}
-            showCursor={true}
-            loop={false}
-            cursorCharacter="_"
+      <section className="home p-0 text-center z-2">
+        <div style={{ width: "100%", height: "100%", position: "relative" }}>
+          <GridScan
+            sensitivity={0.55}
+            lineThickness={1}
+            linesColor="#392e4e"
+            gridScale={0.1}
+            scanColor="#FF9FFC"
+            scanOpacity={0.4}
+            enablePost
+            bloomIntensity={0.6}
+            chromaticAberration={0.002}
+            noiseIntensity={0.01}
           />
-        </FadeContent>
+        </div>
+        <div className="content">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="mb-2"
+          >
+            function meets finesse.
+          </motion.h1>
+          <FadeContent
+            blur={true}
+            duration={1500}
+            easing="ease-out"
+            initialOpacity={0}
+          >
+            <TextType
+              text={["meet shennawy, pixel perfectionist."]}
+              style={{ fontSize: "1.5rem" }}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              loop={false}
+              cursorCharacter="_"
+            />
+          </FadeContent>
+        </div>
       </section>
     </>
   );

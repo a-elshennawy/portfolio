@@ -1,0 +1,32 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "title": "fast & focused",
+      "content": "moving quickly no cutting corners — delivering clean builds fast, then refinig with precision",
+      "icon": "/icons/flash.png",
+      "SpotlightColor": "rgba(121, 0, 248, 0.2)"
+    },
+    {
+      "id": 1,
+      "title": "pixel precision",
+      "content": "Every component I craft is intentional — I obsess over alignment, spacing, and visual clarity.",
+      "icon": "/icons/focus.png",
+      "SpotlightColor": "rgba(0, 128, 255, 0.2)"
+    },
+    {
+      "id": 2,
+      "title": "mobile first",
+      "content": "From the smallest screens up, I design interfaces that feel smooth, natural, and touch-friendly.",
+      "icon": "/icons/mobile.png",
+      "SpotlightColor": "rgba(22, 255, 0, 0.2)"
+    },
+    {
+      "id": 3,
+      "title": "clarity wins",
+      "content": "Whether in code or communication, I keep things clear — no guesswork, no messy logic.",
+      "icon": "/icons/handshake.png",
+      "SpotlightColor": "rgba(226, 255, 0, 0.2)"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+.about {
+    .hero {
+        position: relative;
+        height: 100dvh;
+
+        .heroContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h1 {
+                width: max-content;
+            }
+
+            .scrollDownBtn {
+                display: block;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: var(--secondary);
+                padding: 0.625rem;
+                width: fit-content;
+                border-radius: 0.938rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    filter: drop-shadow(0 0 0.313rem var(--secondary));
+                }
+            }
+        }
+    }
+
+    .approachCards {
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .approachCard {
+            transition: all 0.3s ease-in-out;
+
+            h3 {
+                text-transform: capitalize;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                margin: 0rem 0.625rem !important;
+            }
+        }
+    }
+
+    .stack {
+        h2 {
+            text-transform: capitalize;
+        }
+
+        .stackIcon {
+            width: fit-content !important;
+            cursor: pointer;
+            display: inline;
+            margin: 0.313rem;
+            transition: all 0.3s ease-in-out;
+
+            svg {
+                font-size: 3.125rem;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                margin: 0rem 0.625rem;
+            }
+        }
+
+        /*customized colors*/
+        .react {
+            color: #006cff;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #006cff);
+            }
+        }
+        .next,
+        .gitHub {
+            color: #fff;
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #fff);
+            }
+        }
+        .javaScript {
+            color: #fff500;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #fff500);
+            }
+        }
+        .html {
+            color: #ff9800;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #ff9800);
+            }
+        }
+        .css {
+            color: #9800ff;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #9800ff);
+            }
+        }
+        .bootstrap {
+            color: #df00ff;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #df00ff);
+            }
+        }
+        .git {
+            color: #fd0000;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #fd0000);
+            }
+        }
+        .firebase {
+            color: #ffda00;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #ffda00);
+            }
+        }
+        .supabase {
+            color: #00ff1b;
+
+            &:hover {
+                filter: drop-shadow(0 0 0.625rem #00ff1b);
+            }
+        }
+    }
+}
