@@ -1,12 +1,15 @@
 .navContainer {
     padding: 0.625rem 0rem;
-    position: sticky;
+    position: absolute;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1111;
 
     .navDock {
         width: fit-content !important;
         padding: 0.313rem 0.625rem;
+        margin: auto;
         border-radius: 0.938rem;
         backdrop-filter: blur(10px);
 

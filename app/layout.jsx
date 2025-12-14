@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           sparkCount={8}
           duration={400}
         >
-          {/* <Nav />*/}
+          <Nav />
           {children}
         </ClickSpark>
       </body>

@@ -8,13 +8,13 @@ function Nav() {
   const pathname = usePathname();
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
-        className="navContainer row justify-content-center align-items-center m-0"
-      >
-        <div className="navDock glassmorphism row justify-content-center align-items-center gap-1 mx-0">
+      <div className="navContainer row text-center justify-content-center align-items-center m-0">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
+          className="navDock glassmorphism row justify-content-center align-items-center gap-1 mx-0"
+        >
           <Link
             href="/"
             className={`navItem glassmorphism ${pathname === "/" ? "active" : ""}`}
@@ -39,8 +39,8 @@ function Nav() {
           >
             contact
           </Link>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </>
   );
 }
