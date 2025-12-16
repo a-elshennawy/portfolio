@@ -27,7 +27,7 @@ const SpotlightCard = ({
     <div
       ref={divRef}
       onMouseMove={handleMouseMove}
-      className={`card-spotlight ${className}`}
+      className={`card-spotlight glassmorphism ${className}`}
     >
       {children}
     </div>

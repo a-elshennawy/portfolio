@@ -7,7 +7,6 @@ import TextType from "@/components/UI/TextType/TextType";
 import Link from "next/link";
 import SpotlightCard from "@/components/UI/SpotlightCard/SpotlightCard";
 import StackComponent from "@/components/inPageComponents/AboutPage/StackComponent";
-import LightRays from "@/components/UI/LightRays/LightRays";
 
 function About() {
   const [cards, setCards] = useState([]);
@@ -21,20 +20,6 @@ function About() {
   return (
     <>
       <section className="about p-0 text-center z-2">
-        <div style={{ width: "100%", height: "100%", position: "absolute" }}>
-          <LightRays
-            raysOrigin="top-center"
-            raysColor="fff"
-            raysSpeed={1.5}
-            lightSpread={0.8}
-            rayLength={1.2}
-            followMouse={true}
-            mouseInfluence={0.1}
-            noiseAmount={0.1}
-            distortion={0.05}
-            className="custom-rays"
-          />
-        </div>
         <div className="hero">
           <div className="heroContent">
             <FadeContent
@@ -63,8 +48,10 @@ function About() {
             </FadeContent>
             <TextType
               text={[
-                "pixel perfectionist.",
-                "a budget friendly developer",
+                "your designer",
+                "your friendly developer",
+                "your product manager",
+                "your tech support",
                 "your next right choice",
               ]}
               style={{ fontSize: "1.25rem" }}
@@ -89,7 +76,6 @@ function About() {
           className="row justify-content-center align-items-start gap-1 mt-5 pt-5 mx-0"
         >
           <div className="approachCards col-10 row justify-content-center align-items-center gap-3 m-0">
-            <h2 className="mb-3">how ?</h2>
             {cards.map((card) => (
               <SpotlightCard
                 key={card.id}
@@ -113,6 +99,8 @@ function About() {
           <div className="stack col-10 row justify-content-center align-items-center p-0 my-5 mx-0">
             <StackComponent />
           </div>
+
+          <div className="process"></div>
         </div>
       </section>
     </>

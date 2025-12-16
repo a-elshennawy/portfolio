@@ -7,7 +7,7 @@
     z-index: 1111;
 
     .navDock {
-        width: fit-content !important;
+        width: max-content !important;
         padding: 0.313rem 0.625rem;
         margin: auto;
         border-radius: 0.938rem;

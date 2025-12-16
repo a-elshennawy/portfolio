@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import TextType from "@/components/UI/TextType/TextType";
 import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import { motion } from "motion/react";
-import { GridScan } from "@/components/UI/GridScan/GridScan";
 
 export default function Home() {
   useEffect(() => {
@@ -16,20 +15,6 @@ export default function Home() {
   return (
     <>
       <section className="home p-0 text-center z-2">
-        <div style={{ width: "100%", height: "100%", position: "relative" }}>
-          <GridScan
-            sensitivity={0.55}
-            lineThickness={1}
-            linesColor="#392e4e"
-            gridScale={0.1}
-            scanColor="#FF9FFC"
-            scanOpacity={0.4}
-            enablePost
-            bloomIntensity={0.6}
-            chromaticAberration={0.002}
-            noiseIntensity={0.01}
-          />
-        </div>
         <div className="content">
           <motion.h1
             initial={{ opacity: 0 }}

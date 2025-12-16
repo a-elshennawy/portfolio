@@ -22,7 +22,7 @@ function Nav() {
             home
           </Link>
           <Link
-            href="#about"
+            href="/about"
             className={`navItem glassmorphism ${pathname === "/about" ? "active" : ""}`}
           >
             about
