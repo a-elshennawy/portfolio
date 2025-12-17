@@ -12,14 +12,25 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 0.625rem;
+    text-align: center;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(30px) !important;
-    -webkit-backdrop-filter: blur(30px) !important;
-    border: 0.063rem solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
     transform-style: preserve-3d;
     will-change: transform;
     backface-visibility: hidden;
+
+    .imgLayer {
+        position: absolute;
+        inset: 0;
+    }
+
+    .content {
+        background-color: var(--primary) !important;
+        box-shadow: 0 0.25rem 0.313rem var(--primary);
+        border-radius: 15px;
+        color: var(--secondary);
+    }
 }
 
 @media (max-width: 768px) {

@@ -63,8 +63,19 @@ function ProcessComponent() {
         >
           {ProcessCards.map((card) => (
             <Card key={card.id}>
-              <h3>{card.title}</h3>
-              <p>{card.content}</p>
+              {/* adjust this shit bro*/}
+              <div className="imgLayer" style={{ backgroundImage: card.icon }}>
+                {/* <Image
+                  src={card.icon}
+                  width={150}
+                  height={150}
+                  alt={card.title}
+                />*/}
+              </div>
+              <div className="content mt-1 py-2 px-1">
+                <h3 className="mb-2">{card.title}</h3>
+                <h5>{card.content}</h5>
+              </div>
             </Card>
           ))}
         </CardSwap>
