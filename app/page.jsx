@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import TextType from "@/components/UI/TextType/TextType";
 import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -40,6 +41,14 @@ export default function Home() {
               cursorCharacter="_"
             />
           </FadeContent>
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+            className="glassmorphism homeHeroBtn mt-3"
+          >
+            <Link href="/about">start your project</Link>
+          </motion.button>
         </div>
       </section>
     </>

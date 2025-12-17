@@ -1,22 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import "./About.css";
 import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import TextType from "@/components/UI/TextType/TextType";
 import Link from "next/link";
-import SpotlightCard from "@/components/UI/SpotlightCard/SpotlightCard";
 import StackComponent from "@/components/inPageComponents/AboutPage/StackComponent";
+import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
+import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 
 function About() {
-  const [cards, setCards] = useState([]);
-  useEffect(() => {
-    fetch("/API/approachCards.json")
-      .then((res) => res.json())
-      .then((data) => setCards(data.cards))
-      .catch((err) => console.error("Error cards:", err));
-  }, []);
-
   return (
     <>
       <section className="about p-0 text-center z-2">
@@ -73,34 +65,19 @@ function About() {
 
         <div
           id="more"
-          className="row justify-content-center align-items-start gap-1 mt-5 pt-5 mx-0"
+          className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
         >
-          <div className="approachCards col-10 row justify-content-center align-items-center gap-3 m-0">
-            {cards.map((card) => (
-              <SpotlightCard
-                key={card.id}
-                className="approachCard col-md-2 col-12 p-2"
-                spotlightColor={card.SpotlightColor}
-              >
-                <Image
-                  className="cardIcon mb-3"
-                  src={card.icon}
-                  alt={card.title}
-                  width={80}
-                  height={80}
-                  unoptimized
-                />
-                <h3 className="mb-2">{card.title}</h3>
-                <h5>{card.content}</h5>
-              </SpotlightCard>
-            ))}
+          <div className="spotLightCards col-10 row justify-content-center align-items-center gap-3 m-0">
+            <ApproachComponent />
           </div>
 
-          <div className="stack col-10 row justify-content-center align-items-center p-0 my-5 mx-0">
+          <div className="stack col-12 col-md-6 row justify-content-center align-items-center p-0 my-5 mx-0">
             <StackComponent />
           </div>
 
-          <div className="process"></div>
+          <div className="spotLightCards text-center m-0">
+            <ProcessComponent />
+          </div>
         </div>
       </section>
     </>

@@ -8,5 +8,22 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        .homeHeroBtn {
+            padding: 0.625rem;
+            border-radius: 0.625rem;
+            transition: all 0.3s ease;
+
+            a {
+                position: relative;
+                color: var(--secondary);
+                text-transform: capitalize;
+                transition: all 0.3 ease-in-out;
+            }
+
+            &:hover {
+                filter: drop-shadow(0 0 0.313rem var(--secondary));
+            }
+        }
     }
 }

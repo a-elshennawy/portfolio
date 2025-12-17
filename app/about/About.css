@@ -30,21 +30,14 @@
         }
     }
 
-    .approachCards {
+    .spotLightCards {
         h2 {
             text-transform: uppercase;
         }
 
-        .approachCard {
-            transition: all 0.3s ease-in-out;
-
+        .Spotcard {
             h3 {
                 text-transform: capitalize;
-            }
-
-            &:hover {
-                transform: scale(1.1);
-                margin: 0rem 0.625rem !important;
             }
         }
     }
@@ -52,88 +45,6 @@
     .stack {
         h2 {
             text-transform: capitalize;
-        }
-
-        .stackIcon {
-            width: fit-content !important;
-            cursor: pointer;
-            display: inline;
-            margin: 0.313rem;
-            transition: all 0.3s ease-in-out;
-
-            svg {
-                font-size: 3.125rem;
-            }
-
-            &:hover {
-                transform: scale(1.2);
-                margin: 0rem 0.625rem;
-            }
-        }
-
-        /*customized colors*/
-        .react {
-            color: #006cff;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #006cff);
-            }
-        }
-        .next,
-        .gitHub {
-            color: #fff;
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #fff);
-            }
-        }
-        .javaScript {
-            color: #fff500;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #fff500);
-            }
-        }
-        .html {
-            color: #ff9800;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #ff9800);
-            }
-        }
-        .css {
-            color: #9800ff;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #9800ff);
-            }
-        }
-        .bootstrap {
-            color: #df00ff;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #df00ff);
-            }
-        }
-        .git {
-            color: #fd0000;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #fd0000);
-            }
-        }
-        .firebase {
-            color: #ffda00;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #ffda00);
-            }
-        }
-        .supabase {
-            color: #00ff1b;
-
-            &:hover {
-                filter: drop-shadow(0 0 0.625rem #00ff1b);
-            }
         }
     }
 }

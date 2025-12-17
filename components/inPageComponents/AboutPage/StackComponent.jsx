@@ -8,58 +8,69 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiSupabaseFill } from "react-icons/ri";
+import LogoLoop from "@/components/UI/LogoLoop/LogoLoop";
 
 function StackComponent() {
   const stackIcons = [
-    { id: 0, src: <FaReact />, className: "react", link: "https://react.dev/" },
+    {
+      id: 0,
+      node: <FaReact />,
+      className: "react",
+      href: "https://react.dev/",
+    },
     {
       id: 1,
-      src: <RiNextjsFill />,
+      node: <RiNextjsFill />,
       className: "next",
-      link: "https://nextjs.org/",
+      href: "https://nextjs.org/",
     },
     {
       id: 2,
-      src: <IoLogoJavascript />,
+      node: <IoLogoJavascript />,
       className: "javaScript",
-      link: "https://www.javascript.com/",
+      href: "https://www.javascript.com/",
     },
-    { id: 3, src: <FaHtml5 />, className: "html", link: "https://whatwg.org/" },
+    {
+      id: 3,
+      node: <FaHtml5 />,
+      className: "html",
+      href: "https://whatwg.org/",
+    },
     {
       id: 4,
-      src: <IoLogoCss3 />,
+      node: <IoLogoCss3 />,
       className: "css",
-      link: "https://www.w3.org/TR/",
+      href: "https://www.w3.org/TR/",
     },
     {
       id: 5,
-      src: <FaBootstrap />,
+      node: <FaBootstrap />,
       className: "bootstrap",
-      link: "https://getbootstrap.com/",
+      href: "https://getbootstrap.com/",
     },
     {
       id: 6,
-      src: <FaGitAlt />,
+      node: <FaGitAlt />,
       className: "git",
-      link: "https://git-scm.com/",
+      href: "https://git-scm.com/",
     },
     {
       id: 7,
-      src: <FaGithub />,
+      node: <FaGithub />,
       className: "gitHub",
-      link: "https://github.com/a-elshennawy",
+      href: "https://github.com/a-elshennawy",
     },
     {
       id: 8,
-      src: <IoLogoFirebase />,
+      node: <IoLogoFirebase />,
       className: "firebase",
-      link: "https://console.firebase.google.com/",
+      href: "https://console.firebase.google.com/",
     },
     {
       id: 9,
-      src: <RiSupabaseFill />,
+      node: <RiSupabaseFill />,
       className: "supabase",
-      link: "https://supabase.com/",
+      href: "https://supabase.com/",
     },
   ];
 
@@ -68,15 +79,27 @@ function StackComponent() {
   };
   return (
     <>
-      {stackIcons.map((icon) => (
-        <div
-          key={icon.id}
-          className={`${icon.className} stackIcon p-0`}
-          onClick={() => handleIconClick(icon.link)}
-        >
-          {icon.src}
-        </div>
-      ))}
+      <div
+        style={{
+          height: "100%",
+          position: "relative",
+          overflow: "hidden",
+          padding: "0",
+        }}
+      >
+        <LogoLoop
+          logos={stackIcons}
+          speed={100}
+          direction="left"
+          logoHeight={48}
+          gap={40}
+          hoverSpeed={0}
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#000"
+          ariaLabel="Technology partners"
+        />
+      </div>
     </>
   );
 }
