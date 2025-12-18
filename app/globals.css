@@ -22,6 +22,7 @@ body {
     background-color: var(--primary) !important;
     color: var(--secondary) !important;
     font-family: "josefinSans" !important;
+    cursor: url("/cursor.png"), default;
 }
 
 section {
@@ -45,6 +46,7 @@ p {
 
 a {
     text-decoration: none !important;
+    text-transform: capitalize;
     transition: all 0.3s ease-in-out;
 }
 

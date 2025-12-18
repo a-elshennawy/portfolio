@@ -42,13 +42,13 @@
     .whatsAppBtn {
         position: absolute;
         bottom: 5%;
-        right: 1%;
-        transform: translate(-1%, -5%);
+        right: 2%;
+        transform: translate(-5%, -2%);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3.125rem;
+        height: 3.125rem;
         border-radius: 50%;
         background-color: #00ff51;
         border: none;
