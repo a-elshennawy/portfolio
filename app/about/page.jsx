@@ -7,6 +7,7 @@ import Link from "next/link";
 import StackComponent from "@/components/inPageComponents/AboutPage/StackComponent";
 import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 function About() {
   return (
@@ -58,7 +59,8 @@ function About() {
               className="scrollDownBtn glassmorphism mt-5 mx-auto"
               href={"#more"}
             >
-              know more
+              need to know
+              <FaArrowCircleRight />
             </Link>
           </div>
         </div>
@@ -75,7 +77,7 @@ function About() {
             <StackComponent />
           </div>
 
-          <div className="spotLightCards text-center m-0">
+          <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 my-5 mx-0">
             <ProcessComponent />
           </div>
         </div>

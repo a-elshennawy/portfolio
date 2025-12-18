@@ -5,7 +5,8 @@ import TextType from "@/components/UI/TextType/TextType";
 import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import { motion } from "motion/react";
 import Link from "next/link";
-
+import { TbBrandWhatsappFilled } from "react-icons/tb";
+import { FaArrowCircleRight } from "react-icons/fa";
 export default function Home() {
   useEffect(() => {
     // @ts-expect-error - no props needed here
@@ -45,11 +46,35 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
-            className="glassmorphism homeHeroBtn mt-3"
+            className="glassmorphism homeHeroBtn mt-3 mx-1"
           >
-            <Link href="/about">start your project</Link>
+            <Link href="/about">
+              know more
+              <FaArrowCircleRight />
+            </Link>
+          </motion.button>
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+            className="glassmorphism homeHeroBtn mt-3 mx-1"
+          >
+            <Link href="/contact">
+              contact
+              <FaArrowCircleRight />
+            </Link>
           </motion.button>
         </div>
+        <motion.button
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
+          className="whatsAppBtn"
+        >
+          <Link href="https://wa.me/201033926177" target="_blank">
+            <TbBrandWhatsappFilled />
+          </Link>
+        </motion.button>
       </section>
     </>
   );
