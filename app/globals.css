@@ -64,3 +64,11 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+/*responsive*/
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+}

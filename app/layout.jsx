@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           duration={400}
         >
           <Nav />
-          {/* <div
+          <div
             style={{
               width: "100%",
               height: "100%",
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
               interactive={true}
               parallax={true}
             />
-          </div>*/}
+          </div>
           {children}
         </ClickSpark>
       </body>
