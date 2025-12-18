@@ -34,12 +34,12 @@ export default function RootLayout({ children }) {
             <FloatingLines
               enabledWaves={["top", "middle", "bottom"]}
               // Array - specify line count per wave; Number - same count for all waves
-              lineCount={[10, 15, 20]}
+              lineCount={[5, 5, 5]}
               // Array - specify line distance per wave; Number - same distance for all waves
               lineDistance={[8, 6, 4]}
               bendRadius={5.0}
               bendStrength={-0.5}
-              interactive={true}
+              interactive={false}
               parallax={true}
             />
           </div>

@@ -17,7 +17,12 @@ export default function Home() {
   return (
     <>
       <section className="home p-0 text-center z-2">
-        <div className="content">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          className="content glassmorphism p-2"
+        >
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -64,7 +69,7 @@ export default function Home() {
               <FaArrowCircleRight />
             </Link>
           </motion.button>
-        </div>
+        </motion.div>
         <motion.button
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}

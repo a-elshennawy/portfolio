@@ -96,7 +96,7 @@ function StackComponent() {
           hoverSpeed={0}
           scaleOnHover
           fadeOut
-          fadeOutColor="#000"
+          fadeOutColor="transparent"
           ariaLabel="Technology partners"
         />
       </div>
