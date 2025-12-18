@@ -69,10 +69,12 @@ function About() {
           className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
         >
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-3 m-0">
+            <h2>FOCUS POINTS</h2>
             <ApproachComponent />
           </div>
 
-          <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 my-5 mx-0">
+          <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
+            <h2>HOW TO ?</h2>
             <ProcessComponent />
           </div>
         </div>

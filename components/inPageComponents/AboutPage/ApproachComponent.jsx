@@ -50,7 +50,6 @@ function ApproachComponent() {
           key={card.id}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.05 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{
             duration: card.animationDuration,

@@ -33,8 +33,6 @@
                 }
 
                 &:hover {
-                    filter: drop-shadow(0 0 0.313rem var(--secondary));
-
                     svg {
                         transform: rotate(90deg);
                     }
