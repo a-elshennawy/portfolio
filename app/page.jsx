@@ -16,12 +16,12 @@ export default function Home() {
   }, []);
   return (
     <>
-      <section className="home p-0 text-center z-2">
+      <section className="home p-0 text-center z-2 row justify-content-center align-items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="content glassmorphism p-2"
+          className="content col-10 col-md-3 p-2"
         >
           <motion.h1
             initial={{ opacity: 0 }}

@@ -4,7 +4,6 @@ import "./About.css";
 import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import TextType from "@/components/UI/TextType/TextType";
 import Link from "next/link";
-import StackComponent from "@/components/inPageComponents/AboutPage/StackComponent";
 import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 import { FaArrowCircleRight } from "react-icons/fa";
@@ -71,10 +70,6 @@ function About() {
         >
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-3 m-0">
             <ApproachComponent />
-          </div>
-
-          <div className="stack col-12 row justify-content-center align-items-center p-0 my-5 mx-0">
-            <StackComponent />
           </div>
 
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 my-5 mx-0">

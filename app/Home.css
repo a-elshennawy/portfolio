@@ -5,10 +5,10 @@
 
     .content {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0.938rem;
+        transform: translate(-50%, -30%);
+        /*border-radius: 0.938rem;*/
 
         .homeHeroBtn {
             display: inline-flex;
