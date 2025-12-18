@@ -73,7 +73,7 @@ function About() {
             <ApproachComponent />
           </div>
 
-          <div className="stack col-12 col-md-6 row justify-content-center align-items-center p-0 my-5 mx-0">
+          <div className="stack col-12 row justify-content-center align-items-center p-0 my-5 mx-0">
             <StackComponent />
           </div>
 
