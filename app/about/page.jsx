@@ -7,6 +7,7 @@ import Link from "next/link";
 import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { motion } from "motion/react";
 
 function About() {
   return (
@@ -14,11 +15,10 @@ function About() {
       <section className="about p-0 text-center z-2">
         <div className="hero">
           <div className="heroContent">
-            <FadeContent
-              blur={true}
-              duration={3000}
-              easing="ease-out"
-              initialOpacity={0}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.2, ease: "easeInOut" }}
             >
               <Image
                 src={"/favicon.png"}
@@ -28,7 +28,7 @@ function About() {
                 unoptimized
                 className="mb-3"
               />
-            </FadeContent>
+            </motion.div>
 
             <FadeContent
               blur={true}
