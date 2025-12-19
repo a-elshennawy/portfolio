@@ -9,7 +9,7 @@ function ProcessComponent() {
       title: "Concept & Scope",
       content:
         "We align on the must-haves. I listen, ask the hard questions, and craft a clear project roadmap before the first line of code.",
-      icon: "/icons/processStepsIcons/light-bulb.png",
+      icon: "/icons/stepsIcons/light-bulb.png",
       SpotlightColor: "rgba(251, 229, 43, 0.2)",
       animationDuration: 0.3,
     },
@@ -19,7 +19,7 @@ function ProcessComponent() {
       title: "Design & Clarity",
       content:
         "I switch to UI/UX (Figma). Every pixel is intentional—obsessed over alignment, spacing, and a clean, touch-friendly feel across all screen sizes.",
-      icon: "/icons/processStepsIcons/pencil.png",
+      icon: "/icons/stepsIcons/pencil.png",
       SpotlightColor: "rgba(0, 121, 177, 0.2)",
       animationDuration: 0.5,
     },
@@ -29,7 +29,7 @@ function ProcessComponent() {
       title: "Rapid Prototype",
       content:
         "Moving quickly, no cutting corners. I deliver a clean, component-based front-end build and integrate the BaaS (Firebase/Supabase) for rapid functionality.",
-      icon: "/icons/processStepsIcons/rocket.png",
+      icon: "/icons/stepsIcons/rocket.png",
       SpotlightColor: "rgba(151, 222, 255, 0.2)",
       animationDuration: 0.7,
     },
@@ -39,7 +39,7 @@ function ProcessComponent() {
       title: "Live Review & Refine",
       content:
         "Instant follow-up! I deploy the build to a free host like Vercel right away so you can test it live. We refine with precision based on your real-time feedback.",
-      icon: "/icons/processStepsIcons/arrow-right.png",
+      icon: "/icons/stepsIcons/arrow-right.png",
       SpotlightColor: "rgba(113, 0, 236, 0.2)",
       animationDuration: 0.9,
     },
@@ -49,7 +49,7 @@ function ProcessComponent() {
       title: "Launch & Handover",
       content:
         "Clean code, no guesswork. We finalize the production build and I hand over everything—clear documentation, reusable components, and a smooth deployment process.",
-      icon: "/icons/processStepsIcons/checked.png",
+      icon: "/icons/stepsIcons/checked.png",
       SpotlightColor: "rgba(0, 236, 75, 0.2)",
       animationDuration: 1.1,
     },
@@ -59,7 +59,7 @@ function ProcessComponent() {
       title: "After Support",
       content:
         "I don't vanish post-launch. Bug fixes, feature tweaks, or scaling questions—I'm here to ensure your project stays sharp and adapts as your needs evolve.",
-      icon: "/icons/processStepsIcons/technical-support.png",
+      icon: "/icons/stepsIcons/technical-support.png",
       SpotlightColor: "rgba(255, 255, 255, 0.2)",
       animationDuration: 1.3,
     },

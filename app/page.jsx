@@ -7,13 +7,17 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { TbBrandWhatsappFilled } from "react-icons/tb";
 import { FaArrowCircleRight } from "react-icons/fa";
+import useMobile from "@/hooks/useMobile";
 export default function Home() {
+  const { isMobile } = useMobile();
+
   useEffect(() => {
     // @ts-expect-error - no props needed here
     import("bootstrap/dist/js/bootstrap.bundle.min.js")
       .then(() => console.log("Bootstrap JS loaded correctly"))
       .catch(console.error);
   }, []);
+
   return (
     <>
       <section className="home p-0 text-center z-2 row justify-content-center align-items-center">
@@ -71,15 +75,21 @@ export default function Home() {
           </motion.button>
         </motion.div>
         <motion.button
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           className="whatsAppBtn"
         >
           <Link href="https://wa.me/201033926177" target="_blank">
             <TbBrandWhatsappFilled />
           </Link>
         </motion.button>
+        <img
+          src="/avatar/pointingRight.webp"
+          alt="character"
+          loading="lazy"
+          style={{ width: isMobile ? "80%" : "20%" }}
+        />
       </section>
     </>
   );

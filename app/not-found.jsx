@@ -18,7 +18,7 @@ function notFound() {
         >
           <div className="col-12 p-0">
             <Image
-              src="/404.png"
+              src="/avatar/404.webp"
               alt="404"
               width={450}
               height={500}

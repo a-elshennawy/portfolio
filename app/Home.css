@@ -32,6 +32,8 @@
             }
 
             &:hover {
+                cursor: url("/cursor/click.png"), default;
+
                 svg {
                     transform: rotate(-45deg);
                 }
@@ -41,9 +43,9 @@
 
     .whatsAppBtn {
         position: absolute;
-        bottom: 5%;
+        bottom: 20%;
         right: 2%;
-        transform: translate(-5%, -2%);
+        transform: translate(-20%, -2%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,11 +70,19 @@
 
         &:hover {
             background-color: var(--secondary);
+            cursor: url("/cursor/click.png"), default;
             a {
                 svg {
                     color: #00ff51;
                 }
             }
         }
+    }
+
+    img {
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+        transform: translate(-5%);
     }
 }

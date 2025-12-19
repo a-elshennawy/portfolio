@@ -10,7 +10,7 @@ function ApproachComponent() {
       title: "fast & focused",
       content:
         "moving quickly no cutting corners — delivering clean builds fast, then refinig with precision",
-      icon: "/icons/flash.png",
+      icon: "/icons/approachIcons/flash.png",
       SpotlightColor: "rgba(121, 0, 248, 0.2)",
       animationDuration: 0.3,
     },
@@ -19,7 +19,7 @@ function ApproachComponent() {
       title: "pixel precision",
       content:
         "Every component I craft is intentional — I obsess over alignment, spacing, and visual clarity.",
-      icon: "/icons/focus.png",
+      icon: "/icons/approachIcons/focus.png",
       SpotlightColor: "rgba(0, 128, 255, 0.2)",
       animationDuration: 0.5,
     },
@@ -28,7 +28,7 @@ function ApproachComponent() {
       title: "mobile first",
       content:
         "From the smallest screens up, I design interfaces that feel smooth, natural, and touch-friendly.",
-      icon: "/icons/mobile.png",
+      icon: "/icons/approachIcons/mobile.png",
       SpotlightColor: "rgba(22, 255, 0, 0.2)",
       animationDuration: 0.7,
     },
@@ -37,7 +37,7 @@ function ApproachComponent() {
       title: "clarity wins",
       content:
         "Whether in code or communication, I keep things clear — no guesswork, no messy logic.",
-      icon: "/icons/handshake.png",
+      icon: "/icons/approachIcons/handshake.png",
       SpotlightColor: "rgba(226, 255, 0, 0.2)",
       animationDuration: 0.9,
     },

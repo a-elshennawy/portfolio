@@ -8,12 +8,20 @@ import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachC
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { motion } from "motion/react";
+import useMobile from "@/hooks/useMobile";
 
 function About() {
+  const { isMobile } = useMobile();
   return (
     <>
       <section className="about p-0 text-center z-2">
         <div className="hero">
+          <img
+            src="/avatar/down.webp"
+            alt="down"
+            style={{ width: isMobile ? "90%" : "20%" }}
+            className="avatarImg"
+          />
           <div className="heroContent">
             <motion.div
               initial={{ opacity: 0 }}

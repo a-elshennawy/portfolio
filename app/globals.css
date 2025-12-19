@@ -22,7 +22,7 @@ body {
     background-color: var(--primary) !important;
     color: var(--secondary) !important;
     font-family: "josefinSans" !important;
-    cursor: url("/cursor.png"), default;
+    cursor: url("/cursor/cursor.png"), default;
 }
 
 section {
@@ -48,6 +48,10 @@ a {
     text-decoration: none !important;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: url("/cursor/click.png"), default;
+    }
 }
 
 .glassmorphism {

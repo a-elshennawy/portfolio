@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React from "react";
-
+import useMobile from "@/hooks/useMobile";
 function SocialMediaIcons() {
+  const { isMobile } = useMobile();
   const socialItems = [
     {
       imgSrc: "/icons/socialIcons/github.png",
@@ -25,13 +25,13 @@ function SocialMediaIcons() {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="col-2 p-0 m-0 socialIcon"
+            className="col-1 p-0 m-0 socialIcon"
           >
             <Image
               src={item.imgSrc}
               alt="Social Media Icon"
-              width={80}
-              height={80}
+              width={isMobile ? 50 : 80}
+              height={isMobile ? 50 : 80}
             />
           </a>
         ))}

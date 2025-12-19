@@ -16,7 +16,9 @@ function Contact() {
             </Link>
           </div>
         </div>
-        <ContactForm />
+        <div className="row text-center justify-content-center align-items-center py-5 m-0">
+          <ContactForm />
+        </div>
       </section>
     </>
   );
