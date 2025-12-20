@@ -7,7 +7,6 @@ import Link from "next/link";
 import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 import { FaArrowCircleRight } from "react-icons/fa";
-import { motion } from "motion/react";
 import useMobile from "@/hooks/useMobile";
 import TestmonialsComponent from "@/components/inPageComponents/AboutPage/TestmonialsComponent";
 
@@ -47,14 +46,12 @@ function About() {
               loop={true}
               cursorCharacter="_"
             />
-
-            <Link
-              className="scrollDownBtn glassmorphism mt-5 mx-auto"
-              href={"#more"}
-            >
-              need to know
-              <FaArrowCircleRight />
-            </Link>
+            <div className="mt-5 p-1">
+              <Link className="glassmorphism basicBtn aboutBtn" href={"#more"}>
+                need to know
+                <FaArrowCircleRight />
+              </Link>
+            </div>
           </div>
         </div>
         <div

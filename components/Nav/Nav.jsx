@@ -1,4 +1,5 @@
 "use client";
+import { ViewTransitions } from "next-view-transitions";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,30 +16,41 @@ function Nav() {
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
           className="navDock glassmorphism row justify-content-center align-items-center gap-1 mx-0"
         >
-          <Link
-            href="/"
-            className={`navItem glassmorphism ${pathname === "/" ? "active" : ""}`}
-          >
-            home
-          </Link>
-          <Link
-            href="/about"
-            className={`navItem glassmorphism ${pathname === "/about" ? "active" : ""}`}
-          >
-            about
-          </Link>
-          <Link
-            href="/projects"
-            className={`navItem glassmorphism ${pathname === "/projects" ? "active" : ""}`}
-          >
-            projects
-          </Link>
-          <Link
-            href="/contact"
-            className={`navItem glassmorphism ${pathname === "/contact" ? "active" : ""}`}
-          >
-            contact
-          </Link>
+          <ViewTransitions>
+            <Link
+              href="/"
+              className={`navItem glassmorphism ${pathname === "/" ? "active" : ""}`}
+            >
+              home
+            </Link>
+          </ViewTransitions>
+
+          <ViewTransitions>
+            <Link
+              href="/about"
+              className={`navItem glassmorphism ${pathname === "/about" ? "active" : ""}`}
+            >
+              about
+            </Link>
+          </ViewTransitions>
+
+          <ViewTransitions>
+            <Link
+              href="/projects"
+              className={`navItem glassmorphism ${pathname === "/projects" ? "active" : ""}`}
+            >
+              projects
+            </Link>
+          </ViewTransitions>
+
+          <ViewTransitions>
+            <Link
+              href="/contact"
+              className={`navItem glassmorphism ${pathname === "/contact" ? "active" : ""}`}
+            >
+              contact
+            </Link>
+          </ViewTransitions>
         </motion.div>
       </div>
     </>

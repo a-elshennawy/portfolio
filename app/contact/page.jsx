@@ -3,6 +3,7 @@ import SocialMediaIcons from "@/components/inPageComponents/ContactPage/SocialMe
 import "./Contact.css";
 import Link from "next/link";
 import ContactForm from "@/components/inPageComponents/ContactPage/ContactForm";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -11,8 +12,13 @@ function Contact() {
         <div className="hero">
           <div className="heroContent">
             <SocialMediaIcons />
-            <Link className="glassmorphism toFormBtn" href="#contactForm">
+
+            <Link
+              className="glassmorphism basicBtn contactBtn"
+              href="#contactForm"
+            >
               book your call
+              <FaArrowCircleRight />
             </Link>
           </div>
         </div>

@@ -51,28 +51,16 @@ export default function Home() {
               cursorCharacter="_"
             />
           </FadeContent>
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
-            className="glassmorphism homeHeroBtn mt-3 mx-1"
-          >
-            <Link href="/about">
+          <div className="mt-3 p-1">
+            <Link className="glassmorphism basicBtn homeBtn" href="/about">
               know more
               <FaArrowCircleRight />
             </Link>
-          </motion.button>
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
-            className="glassmorphism homeHeroBtn mt-3 mx-1"
-          >
-            <Link href="/contact">
+            <Link className="glassmorphism basicBtn homeBtn" href="/contact">
               contact
               <FaArrowCircleRight />
             </Link>
-          </motion.button>
+          </div>
         </motion.div>
         <motion.button
           initial={{ opacity: 0 }}

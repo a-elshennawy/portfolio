@@ -1,0 +1,57 @@
+.projectDetails {
+    min-height: 100dvh;
+
+    .project {
+        .backBtn {
+            display: block;
+            width: fit-content;
+            color: var(--secondary);
+            border-radius: 0.625rem;
+            padding: 0.313rem;
+            text-transform: capitalize;
+        }
+        .imgSide {
+            img {
+                border-radius: 0.625rem;
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .thumbnailsSlider {
+                border-radius: 0.625rem;
+                opacity: 0.8;
+
+                img {
+                    cursor: url("/cursor/click.png"), default !important;
+                    border-radius: 0.625rem;
+                    opacity: 0.8;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .detailsSide {
+            text-transform: capitalize;
+
+            .tags,
+            .stack {
+                display: flex;
+                justify-content: start;
+                flex-wrap: wrap;
+                gap: 0.313rem;
+                margin-top: 0.5rem;
+
+                .tagBadge,
+                .techBadge {
+                    border-radius: 0.625rem;
+                }
+            }
+        }
+    }
+
+    .related {
+        text-transform: capitalize !important;
+    }
+}

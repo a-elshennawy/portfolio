@@ -18,16 +18,6 @@
             h1 {
                 text-transform: uppercase;
             }
-
-            .toProjectsBtn {
-                padding: 0.625rem;
-                border-radius: 0.625rem;
-                color: var(--secondary);
-
-                &:hover {
-                    cursor: url("/cursor/click.png"), default;
-                }
-            }
         }
     }
 }

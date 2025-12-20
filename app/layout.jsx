@@ -3,6 +3,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ClickSpark from "@/components/UI/ClickSpark/ClickSpark";
 import FloatingLines from "@/components/UI/FloatingLines/FloatingLines";
+import CustomContextMenu from "@/components/CustomeContextMenu/CustomeContextMenu";
 
 export const metadata = {
   title: "Ahmed El-Shennawy",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <CustomContextMenu />
         <ClickSpark
           sparkColor="#fff"
           sparkSize={10}

@@ -8,32 +8,9 @@
         top: 30%;
         left: 50%;
         transform: translate(-50%, -30%);
-        /*border-radius: 0.938rem;*/
 
-        .homeHeroBtn {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            text-transform: capitalize;
-            padding: 0.625rem;
-            width: fit-content;
-            border-radius: 0.938rem;
-            transition: all 0.3s ease-in-out;
-
-            a {
-                color: var(--secondary);
-
-                svg {
-                    font-size: 1.25rem;
-                    margin: 0rem 0.313rem;
-                    transition: all 0.3s ease-in-out;
-                }
-            }
-
+        .homeBtn {
             &:hover {
-                cursor: url("/cursor/click.png"), default;
-
                 svg {
                     transform: rotate(-45deg);
                 }

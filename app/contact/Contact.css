@@ -4,6 +4,7 @@
         height: 100dvh;
 
         .heroContent {
+            width: max-content !important;
             position: absolute;
             top: 40%;
             left: 50%;
@@ -18,13 +19,11 @@
                 }
             }
 
-            .toFormBtn {
-                padding: 0.625rem;
-                border-radius: 0.625rem;
-                color: var(--secondary);
-
+            .contactBtn {
                 &:hover {
-                    cursor: url("/cursor/click.png"), default;
+                    svg {
+                        transform: rotate(90deg);
+                    }
                 }
             }
         }
