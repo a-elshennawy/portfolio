@@ -75,9 +75,9 @@ export default function Home() {
           </motion.button>
         </motion.div>
         <motion.button
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
           className="whatsAppBtn"
         >
           <Link href="https://wa.me/201033926177" target="_blank">

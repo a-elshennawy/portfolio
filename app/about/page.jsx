@@ -9,6 +9,7 @@ import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessCom
 import { FaArrowCircleRight } from "react-icons/fa";
 import { motion } from "motion/react";
 import useMobile from "@/hooks/useMobile";
+import TestmonialsComponent from "@/components/inPageComponents/AboutPage/TestmonialsComponent";
 
 function About() {
   const { isMobile } = useMobile();
@@ -23,21 +24,6 @@ function About() {
             className="avatarImg"
           />
           <div className="heroContent">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3, delay: 0.2, ease: "easeInOut" }}
-            >
-              <Image
-                src={"/favicon.png"}
-                alt={"main logo"}
-                width={100}
-                height={100}
-                unoptimized
-                className="mb-3"
-              />
-            </motion.div>
-
             <FadeContent
               blur={true}
               duration={1500}
@@ -71,7 +57,6 @@ function About() {
             </Link>
           </div>
         </div>
-
         <div
           id="more"
           className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
@@ -84,6 +69,10 @@ function About() {
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
             <h2>HOW TO ?</h2>
             <ProcessComponent />
+          </div>
+
+          <div className="testmonials col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
+            <TestmonialsComponent />
           </div>
         </div>
       </section>

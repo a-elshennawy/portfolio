@@ -7,7 +7,7 @@ function ContactForm() {
     <>
       <form
         id="contactForm"
-        className="contactForm glassmorphism pt-4 p-2 col-md-3 col-10 row justify-content-center align-items-center gap-3"
+        className="glassmorphism pt-4 p-2 col-md-3 col-10 row justify-content-center align-items-center gap-3"
       >
         <div
           className="img p-0 m-0"

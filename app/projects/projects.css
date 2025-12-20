@@ -1,2 +1,33 @@
 .projects {
+    .hero {
+        position: relative;
+        height: 100dvh;
+
+        .avatarImg {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -15%);
+        }
+
+        .heroContent {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -70%);
+
+            h1 {
+                text-transform: uppercase;
+            }
+
+            .toProjectsBtn {
+                padding: 0.625rem;
+                border-radius: 0.625rem;
+                color: var(--secondary);
+
+                &:hover {
+                    cursor: url("/cursor/click.png"), default;
+                }
+            }
+        }
+    }
 }
