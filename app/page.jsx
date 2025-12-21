@@ -76,7 +76,10 @@ export default function Home() {
           src="/avatar/pointingRight.webp"
           alt="character"
           loading="lazy"
-          style={{ width: isMobile ? "80%" : "20%" }}
+          style={{
+            width: isMobile ? "80%" : "20%",
+            right: isMobile ? "8%" : "5%",
+          }}
         />
       </section>
     </>
