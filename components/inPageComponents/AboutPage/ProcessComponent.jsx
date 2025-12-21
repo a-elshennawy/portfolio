@@ -58,7 +58,7 @@ function ProcessComponent() {
       step: 6,
       title: "After Support",
       content:
-        "I don't vanish post-launch. Bug fixes, feature tweaks, or scaling questions—I'm here to ensure your project stays sharp and adapts as your needs evolve.",
+        "I don't vanish post-launch. Bug fixes, feature tweaks, or scaling questions—I'm here to ensure your project stays sharp and adapts as your needs evolve, officially with a support contract or per request payment.",
       icon: "/icons/stepsIcons/technical-support.png",
       SpotlightColor: "rgba(255, 255, 255, 0.2)",
       animationDuration: 1.3,

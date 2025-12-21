@@ -8,7 +8,6 @@ import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachC
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 import { FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
-import TestmonialsComponent from "@/components/inPageComponents/AboutPage/TestmonialsComponent";
 
 function About() {
   const { isMobile } = useMobile();
@@ -24,7 +23,7 @@ function About() {
             priority
             quality={85}
             sizes={isMobile ? "90vw" : "20vw"}
-            style={{ width: isMobile ? "90%" : "20%" }}
+            style={{ width: isMobile ? "90%" : "20%", height: "auto" }}
             className="avatarImg"
           />
           <div className="heroContent">
@@ -71,10 +70,6 @@ function About() {
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
             <h2>HOW TO ?</h2>
             <ProcessComponent />
-          </div>
-
-          <div className="testmonials col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
-            <TestmonialsComponent />
           </div>
         </div>
       </section>

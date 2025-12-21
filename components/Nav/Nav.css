@@ -14,10 +14,8 @@
         backdrop-filter: blur(10px);
 
         .navItem {
-            padding: 0.313rem 0.625rem;
+            padding: 0.313rem;
             width: fit-content !important;
-            font-family: "audiowide" !important;
-
             border-radius: 0.625rem;
             color: var(--secondary);
             text-transform: capitalize;
@@ -33,7 +31,7 @@
             background-color: var(--secondary);
             color: var(--primary);
             filter: drop-shadow(0 0 0.313rem var(--secondary));
-            font-weight: bold;
+            transform: scale(1.1);
             transition: all 0.3s ease-in-out;
         }
     }

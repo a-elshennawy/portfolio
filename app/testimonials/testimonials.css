@@ -1,4 +1,4 @@
-.projects {
+.testimonials {
     .hero {
         position: relative;
         height: 100dvh;
@@ -18,5 +18,10 @@
                 text-transform: uppercase;
             }
         }
+    }
+
+    .reviewItem {
+        border-radius: 0.625rem;
+        text-transform: capitalize;
     }
 }
