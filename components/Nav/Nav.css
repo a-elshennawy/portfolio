@@ -16,6 +16,8 @@
         .navItem {
             padding: 0.313rem 0.625rem;
             width: fit-content !important;
+            font-family: "audiowide" !important;
+
             border-radius: 0.625rem;
             color: var(--secondary);
             text-transform: capitalize;

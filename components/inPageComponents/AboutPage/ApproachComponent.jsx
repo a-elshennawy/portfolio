@@ -65,7 +65,8 @@ function ApproachComponent() {
               alt={card.title}
               width={80}
               height={80}
-              unoptimized
+              priority
+              quality={85}
             />
             <h3 className="mb-2">{card.title}</h3>
             <h5>{card.content}</h5>

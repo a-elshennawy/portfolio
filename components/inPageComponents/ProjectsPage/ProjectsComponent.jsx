@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import Image from "next/image";
+import useMobile from "@/hooks/useMobile";
 
 function ProjectsComponent() {
   const [projects, setProjects] = useState([]);
   const router = useRouter();
+  const { isMobile } = useMobile();
 
   useEffect(() => {
     fetch("/API/projects.json")
@@ -36,9 +39,13 @@ function ProjectsComponent() {
             <FaArrowUpRightFromSquare />
           </span>
           <div className="p-0 img">
-            <img
+            <Image
               src={project.thumbnail}
-              alt=""
+              alt={project.title}
+              width={500}
+              height={isMobile ? 250 : 300}
+              priority
+              quality={85}
               onClick={() => toProductDetails(project.id)}
             />
           </div>

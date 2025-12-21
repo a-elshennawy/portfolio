@@ -13,7 +13,6 @@
         .imgSide {
             img {
                 border-radius: 0.625rem;
-                width: 100%;
                 transition: all 0.3s ease-in-out;
             }
 

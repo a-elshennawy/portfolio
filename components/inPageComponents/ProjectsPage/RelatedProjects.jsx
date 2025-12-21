@@ -2,11 +2,14 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import Image from "next/image";
+import useMobile from "@/hooks/useMobile";
 
 function RelatedProjects({ currentProjectId, currentProjectTags }) {
   const [relatedProjects, setRelatedProjects] = useState([]);
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const { isMobile } = useMobile();
 
   useEffect(() => {
     if (!currentProjectTags || currentProjectTags.length === 0) {
@@ -69,9 +72,13 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
             <FaArrowUpRightFromSquare />
           </span>
           <div className="p-0 img">
-            <img
+            <Image
               src={project.thumbnail}
-              alt=""
+              alt={project.title}
+              width={500}
+              height={isMobile ? 250 : 350}
+              priority
+              quality={85}
               onClick={() => toProductDetails(project.id)}
             />
           </div>

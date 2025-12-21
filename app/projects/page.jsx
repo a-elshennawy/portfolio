@@ -3,6 +3,7 @@ import Link from "next/link";
 import "./projects.css";
 import useMobile from "@/hooks/useMobile";
 import ProjectsComponent from "@/components/inPageComponents/ProjectsPage/ProjectsComponent";
+import Image from "next/image";
 
 function Projects() {
   const { isMobile } = useMobile();
@@ -10,10 +11,17 @@ function Projects() {
     <>
       <section className="projects p-0 text-center z-2">
         <div className="hero">
-          <img
+          <Image
             src="/avatar/proud.webp"
-            alt="down"
-            style={{ width: isMobile ? "100%" : "40%" }}
+            alt="character"
+            width={isMobile ? 400 : 500}
+            height={isMobile ? 400 : 600}
+            priority
+            sizes={isMobile ? "100vw" : "40vw"}
+            style={{
+              width: isMobile ? "100%" : "40%",
+              top: isMobile ? "8%" : "10%",
+            }}
             className="avatarImg"
           />
           <div
@@ -29,7 +37,7 @@ function Projects() {
         </div>
         <div
           id="projects"
-          className="projectsSection row justify-content-center align-items-center gap-2 m-0"
+          className="projectsSection row justify-content-center align-items-center gap-3 m-0"
         >
           <ProjectsComponent />
         </div>

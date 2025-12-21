@@ -86,7 +86,8 @@ function ProcessComponent() {
               alt={card.title}
               width={80}
               height={80}
-              unoptimized
+              priority
+              quality={85}
             />
 
             <h3 className="mb-2">

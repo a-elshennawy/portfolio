@@ -6,6 +6,8 @@ import Link from "next/link";
 import Swiper from "swiper";
 import "swiper/css";
 import RelatedProjects from "@/components/inPageComponents/ProjectsPage/RelatedProjects";
+import Image from "next/image";
+import useMobile from "@/hooks/useMobile";
 
 function ProductDetails({ params }) {
   const resolvedParams = use(params);
@@ -15,6 +17,7 @@ function ProductDetails({ params }) {
   const [loading, setLoading] = useState(true);
   const ImgSwiperRef = useRef(null);
   const router = useRouter();
+  const { isMobile } = useMobile();
 
   useEffect(() => {
     fetch("/API/projects.json")
@@ -82,7 +85,7 @@ function ProductDetails({ params }) {
     <>
       <section className="projectDetails py-5">
         <div className="project row justify-content-center align-items-start gap-2 m-0 py-5">
-          <div className="col-12">
+          <div className="col-11 p-0">
             <button
               className="backBtn glassmorphism"
               onClick={() => router.back()}
@@ -91,16 +94,24 @@ function ProductDetails({ params }) {
             </button>
           </div>
           <div className="imgSide col-11 col-md-5 p-0">
-            <img src={selectedImg} alt={project.title} />
+            <Image
+              src={selectedImg}
+              alt={project.title}
+              width={isMobile ? 400 : 800}
+              height={isMobile ? 250 : 500}
+              priority
+              quality={85}
+            />
             <div className="thumbnailsSlider glassmorphism p-2 my-2 imgsSwiper swiper">
               <div className="swiper-wrapper">
                 {projectImgs.map((img, index) => (
                   <div key={index} className="swiper-slide">
-                    <img
+                    <Image
                       src={img}
                       alt={`${project.title} ${index + 1}`}
+                      width={isMobile ? 100 : 150}
+                      height={isMobile ? 70 : 100}
                       onClick={() => setSelectedImg(img)}
-                      style={{ cursor: "pointer" }}
                     />
                   </div>
                 ))}

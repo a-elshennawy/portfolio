@@ -12,6 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "audiowide";
+    src: url("/fonts/Audiowide-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "cairo";
+    src: url("/fonts/Cairo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body {
     max-width: 100dvw;
@@ -96,10 +110,6 @@ form {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-
-        img {
-            width: 90%;
-        }
     }
 
     .inputContainer {

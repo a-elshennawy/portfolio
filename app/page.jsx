@@ -8,6 +8,7 @@ import Link from "next/link";
 import { TbBrandWhatsappFilled } from "react-icons/tb";
 import { FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
+import Image from "next/image";
 export default function Home() {
   const { isMobile } = useMobile();
 
@@ -72,12 +73,17 @@ export default function Home() {
             <TbBrandWhatsappFilled />
           </Link>
         </motion.button>
-        <img
+        <Image
           src="/avatar/pointingRight.webp"
           alt="character"
-          loading="lazy"
+          width={500}
+          height={500}
+          priority
+          quality={85}
+          sizes={isMobile ? "80vw" : "20vw"}
           style={{
             width: isMobile ? "80%" : "20%",
+            height: "auto",
             right: isMobile ? "8%" : "5%",
           }}
         />

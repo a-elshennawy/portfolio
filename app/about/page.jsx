@@ -16,9 +16,14 @@ function About() {
     <>
       <section className="about p-0 text-center z-2">
         <div className="hero">
-          <img
+          <Image
             src="/avatar/down.webp"
-            alt="down"
+            alt="character"
+            width={500}
+            height={350}
+            priority
+            quality={85}
+            sizes={isMobile ? "90vw" : "20vw"}
             style={{ width: isMobile ? "90%" : "20%" }}
             className="avatarImg"
           />

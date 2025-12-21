@@ -12,6 +12,7 @@
 
             h1 {
                 width: max-content;
+                font-family: "audiowide" !important;
             }
 
             .aboutBtn {
@@ -34,10 +35,12 @@
     .spotLightCards {
         h2 {
             text-transform: uppercase;
+            font-family: "audiowide" !important;
         }
 
         .Spotcard {
             h3 {
+                font-family: "audiowide" !important;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -59,12 +62,6 @@
                     line-height: 1;
                 }
             }
-        }
-    }
-
-    .stack {
-        h2 {
-            text-transform: capitalize;
         }
     }
 }
