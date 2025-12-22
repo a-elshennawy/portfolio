@@ -125,7 +125,14 @@ function TestmonialsComponent() {
         )}
       </AnimatePresence>
       {/* Slider Section */}
-      <div className="col-11 col-md-8 p-0 text-center">
+      <motion.div
+        className="col-11 col-md-8 p-0 text-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        style={{ willChange: "transform, opacity" }}
+      >
         {loading && <Loading />}
 
         {!loading && testimonials.length === 0 ? (
@@ -170,10 +177,17 @@ function TestmonialsComponent() {
             ))}
           </Swiper>
         )}
-      </div>
+      </motion.div>
 
       {/* Form Section */}
-      <div className="col-11 col-md-3">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        style={{ willChange: "transform, opacity" }}
+        className="col-11 col-md-3"
+      >
         <form
           onSubmit={handleSubmit}
           className="glassmorphism text-center p-3 row justify-content-center align-items-center gap-1"
@@ -243,7 +257,7 @@ function TestmonialsComponent() {
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </>
   );
 }
