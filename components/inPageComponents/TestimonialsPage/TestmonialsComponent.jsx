@@ -131,8 +131,8 @@ function TestmonialsComponent() {
         {!loading && testimonials.length === 0 ? (
           <CustomeComponent
             imgSrc={"/avatar/bored.webp"}
-            imgWidth={isMobile ? 400 : 500}
-            imgHeight={isMobile ? 300 : 400}
+            imgWidth={isMobile ? 300 : 500}
+            imgHeight={isMobile ? 250 : 400}
             text="no reviews yet, be the first"
           />
         ) : (
