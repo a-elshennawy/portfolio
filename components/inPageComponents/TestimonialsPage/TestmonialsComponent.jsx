@@ -125,7 +125,7 @@ function TestmonialsComponent() {
         )}
       </AnimatePresence>
       {/* Slider Section */}
-      <div className="col-11 col-md-8">
+      <div className="col-11 col-md-8 text-center">
         {loading && <Loading />}
 
         {!loading && testimonials.length === 0 ? (

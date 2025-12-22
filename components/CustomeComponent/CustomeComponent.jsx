@@ -9,7 +9,9 @@ function CustomeComponent({ className, imgSrc, imgWidth, imgHeight, text }) {
           src={imgSrc}
           width={imgWidth}
           height={imgHeight}
+          priority
           alt="Custom Image"
+          style={{ width: "100%" }}
         />
         <h4 className="mt-1">{text}</h4>
       </div>
