@@ -3,7 +3,7 @@ import * as React from "react";
 import Rating from "@mui/material/Rating";
 import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
-import { supabase } from "../../lib/supabaseClient";
+import { supabase } from "@/components/lib/supabaseClient";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -101,9 +101,9 @@ function TestmonialsComponent() {
         {error && (
           <motion.div
             className="submitToast glassmorphism errorToast p-2"
-            initial={{ opacity: 0, scale: 0, y: 20 }}
+            initial={{ opacity: 0, scale: 0, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0, y: 20 }}
+            exit={{ opacity: 0, scale: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
             {error} <TbXboxXFilled />
@@ -115,9 +115,9 @@ function TestmonialsComponent() {
         {success && (
           <motion.div
             className="submitToast glassmorphism sucessToast p-2"
-            initial={{ opacity: 0, scale: 0, y: 20 }}
+            initial={{ opacity: 0, scale: 0, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0, y: 20 }}
+            exit={{ opacity: 0, scale: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
             {success} <FaCheckCircle />
@@ -242,7 +242,7 @@ function TestmonialsComponent() {
 
           <div className="col-12 text-center p-0">
             <button
-              className="basicBtn m-0 glassmorphism testmonialsSubmitBtn"
+              className="basicBtn m-0 glassmorphism submitBtn"
               type="submit"
               disabled={sending}
             >

@@ -25,30 +25,3 @@
         text-transform: capitalize;
     }
 }
-
-.submitToast {
-    position: fixed;
-    bottom: 5%;
-    width: fit-content !important;
-    margin: 0 auto;
-    border-radius: 0.938rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.313rem;
-    z-index: 99999;
-}
-
-.errorToast {
-    svg {
-        font-size: 1.25rem;
-        color: #fd0000;
-    }
-}
-
-.sucessToast {
-    svg {
-        font-size: 1.25rem;
-        color: #2bfb37;
-    }
-}

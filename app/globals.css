@@ -145,21 +145,15 @@ form {
     }
 
     .submitBtn {
-        width: fit-content;
+        width: 100%;
         padding: 0.313rem 0.625rem;
         border-radius: 0.625rem;
         color: var(--secondary);
         text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             cursor: url("/cursor/click.png"), default;
-        }
-    }
-
-    .testmonialsSubmitBtn {
-        width: 100%;
-        transition: all 0.3s ease-in-out;
-        &:hover {
             transform: translateY(-0.313rem);
             box-shadow: 0 0.25rem 0.313rem var(--primary);
         }
@@ -282,15 +276,32 @@ form {
     }
 }
 
-@keyframes loader {
-    0% {
-        filter: drop-shadow(0 0 0.313rem var(--secondary));
+.submitToast {
+    position: fixed;
+    top: 10%;
+    width: fit-content !important;
+    margin: 0 auto;
+    border-radius: 0.938rem;
+    backdrop-filter: blur(1.875rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.313rem;
+    text-transform: capitalize;
+    z-index: 99999;
+}
+
+.errorToast {
+    svg {
+        font-size: 1.25rem;
+        color: #fd0000;
     }
-    50% {
-        filter: drop-shadow(0 0 0.625rem var(--secondary));
-    }
-    100% {
-        filter: drop-shadow(0 0 0.313rem var(--secondary));
+}
+
+.sucessToast {
+    svg {
+        font-size: 1.25rem;
+        color: #2bfb37;
     }
 }
 
@@ -303,8 +314,19 @@ html {
     scrollbar-width: none;
 }
 
-/*responsive*/
+@keyframes loader {
+    0% {
+        filter: drop-shadow(0 0 0.313rem var(--secondary));
+    }
+    50% {
+        filter: drop-shadow(0 0 0.625rem var(--secondary));
+    }
+    100% {
+        filter: drop-shadow(0 0 0.313rem var(--secondary));
+    }
+}
 
+/*responsive*/
 @media (max-width: 768px) {
     :root {
         font-size: 14px;
