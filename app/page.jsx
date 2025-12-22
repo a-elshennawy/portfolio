@@ -2,7 +2,6 @@
 import "./Home.css";
 import { useEffect } from "react";
 import TextType from "@/components/UI/TextType/TextType";
-import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { TbBrandWhatsappFilled } from "react-icons/tb";
@@ -28,30 +27,17 @@ export default function Home() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="content col-10 col-md-3 p-2"
         >
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="mb-2"
-          >
-            function meets finesse.
-          </motion.h1>
-          <FadeContent
-            blur={true}
-            duration={1500}
-            easing="ease-out"
-            initialOpacity={0}
-          >
-            <TextType
-              text={["meet shennawy, pixel perfectionist."]}
-              style={{ fontSize: "1.5rem" }}
-              typingSpeed={75}
-              pauseDuration={1500}
-              showCursor={true}
-              loop={false}
-              cursorCharacter="_"
-            />
-          </FadeContent>
+          <h1 className="mb-2">function meets finesse.</h1>
+
+          <TextType
+            text={["meet shennawy, pixel perfectionist."]}
+            style={{ fontSize: "1.5rem" }}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            loop={false}
+            cursorCharacter="_"
+          />
           <div className="mt-3 p-1">
             <Link className="glassmorphism basicBtn homeBtn" href="/about">
               know more
@@ -73,20 +59,25 @@ export default function Home() {
             <TbBrandWhatsappFilled />
           </Link>
         </motion.button>
-        <Image
-          src="/avatar/pointingRight.webp"
-          alt="character"
-          width={500}
-          height={500}
-          priority
-          quality={85}
-          sizes={isMobile ? "80vw" : "20vw"}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="img p-0"
           style={{
-            width: isMobile ? "80%" : "20%",
-            height: "auto",
-            right: isMobile ? "8%" : "5%",
+            right: isMobile ? "9%" : "5%",
           }}
-        />
+        >
+          <Image
+            src="/avatar/pointingRight.webp"
+            alt="character"
+            width={350}
+            height={300}
+            priority
+            loading="eager"
+            quality={85}
+          />
+        </motion.div>
       </section>
     </>
   );

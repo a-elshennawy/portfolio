@@ -87,6 +87,8 @@ export default function CustomContextMenu() {
                 alt="home icons"
                 width={20}
                 height={20}
+                priority
+                loading="eager"
               />
             </li>
           </Link>
@@ -98,6 +100,8 @@ export default function CustomContextMenu() {
                 alt="about icon"
                 width={20}
                 height={20}
+                priority
+                loading="eager"
               />
             </li>
           </Link>
@@ -109,6 +113,8 @@ export default function CustomContextMenu() {
                 alt="phone icon"
                 width={20}
                 height={20}
+                priority
+                loading="eager"
               />
             </li>
           </Link>
@@ -120,6 +126,8 @@ export default function CustomContextMenu() {
                 alt="whatsapp icon"
                 width={20}
                 height={20}
+                priority
+                loading="eager"
               />
             </li>
           </Link>
@@ -131,6 +139,8 @@ export default function CustomContextMenu() {
                 alt="linkedin icon"
                 width={20}
                 height={20}
+                priority
+                loading="eager"
               />
             </li>
           </Link>
@@ -142,6 +152,8 @@ export default function CustomContextMenu() {
                 alt="github icon"
                 width={20}
                 height={20}
+                priority
+                loading="eager"
               />
             </li>
           </Link>

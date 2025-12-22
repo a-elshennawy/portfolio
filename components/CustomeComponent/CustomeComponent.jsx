@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
-import "./CustomeComponent.css";
 function CustomeComponent({ className, imgSrc, imgWidth, imgHeight, text }) {
   return (
     <>
-      <div className={`${className} customeComp text-center`}>
+      <div className={`${className} customeComp text-center p-0`}>
         <Image
           src={imgSrc}
           width={imgWidth}

@@ -66,6 +66,7 @@ function ApproachComponent() {
               width={80}
               height={80}
               priority
+              loading="eager"
               quality={85}
             />
             <h3 className="mb-2">{card.title}</h3>

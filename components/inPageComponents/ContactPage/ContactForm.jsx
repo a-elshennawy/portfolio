@@ -18,6 +18,7 @@ function ContactForm() {
             height={300}
             priority
             quality={85}
+            loading="eager"
           />
         </div>
         <div className="inputContainer col-12">

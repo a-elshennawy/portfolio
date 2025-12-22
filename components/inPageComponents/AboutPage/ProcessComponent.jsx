@@ -87,6 +87,7 @@ function ProcessComponent() {
               width={80}
               height={80}
               priority
+              loading="eager"
               quality={85}
             />
 

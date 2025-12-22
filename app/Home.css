@@ -57,9 +57,10 @@
         }
     }
 
-    img {
+    .img {
         position: absolute;
         bottom: 0%;
         transform: translate(-5%);
+        width: fit-content;
     }
 }

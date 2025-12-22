@@ -1,6 +1,7 @@
 "use client";
 import { use, useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { motion } from "motion/react";
 import "./productDetails.css";
 import Link from "next/link";
 import Swiper from "swiper";
@@ -88,15 +89,25 @@ function ProductDetails({ params }) {
     <>
       <section className="projectDetails py-5">
         <div className="project row justify-content-center align-items-start gap-2 m-0 py-5">
-          <div className="col-11 p-0">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
+            className="col-11 p-0"
+          >
             <button
               className="backBtn glassmorphism"
               onClick={() => router.back()}
             >
               back
             </button>
-          </div>
-          <div className="imgSide col-11 col-md-5 p-0">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
+            className="imgSide col-11 col-md-5 p-0"
+          >
             <Image
               src={selectedImg}
               alt={project.title}
@@ -120,8 +131,13 @@ function ProductDetails({ params }) {
                 ))}
               </div>
             </div>
-          </div>
-          <div className="detailsSide text-start col-11 col-md-6 p-0">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
+            className="detailsSide text-start col-11 col-md-6 p-0"
+          >
             <h1 className="mb-2">{project.title}</h1>
             <div className="stack my-1">
               {project.stack.map((tech) => (
@@ -149,7 +165,7 @@ function ProductDetails({ params }) {
                 live preview
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="related text-center py-2 row justify-content-center align-items-center gap-2 m-0">
           <RelatedProjects

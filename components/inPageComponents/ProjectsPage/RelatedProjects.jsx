@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
+import { motion } from "motion/react";
 
 function RelatedProjects({ currentProjectId, currentProjectTags }) {
   const [relatedProjects, setRelatedProjects] = useState([]);
@@ -61,7 +62,14 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
     <>
       <h3 className="mb-2">similar projects</h3>
       {relatedProjects.map((project) => (
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: project.id * 0.1,
+            ease: "easeInOut",
+          }}
           key={project.id}
           className="projectCard glassmorphism col-10 col-md-3 p-0 m-0"
         >
@@ -78,6 +86,7 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
               width={500}
               height={isMobile ? 250 : 350}
               priority
+              loading="eager"
               quality={85}
               onClick={() => toProductDetails(project.id)}
             />
@@ -92,7 +101,7 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </>
   );

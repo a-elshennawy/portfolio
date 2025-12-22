@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import "./About.css";
-import FadeContent from "@/components/UI/FadeContent/FadeContent";
 import TextType from "@/components/UI/TextType/TextType";
 import Link from "next/link";
 import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
 import { FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
+import { motion } from "motion/react";
 
 function About() {
   const { isMobile } = useMobile();
@@ -15,26 +15,32 @@ function About() {
     <>
       <section className="about p-0 text-center z-2">
         <div className="hero">
-          <Image
-            src="/avatar/down.webp"
-            alt="character"
-            width={500}
-            height={350}
-            priority
-            quality={85}
-            sizes={isMobile ? "90vw" : "20vw"}
-            style={{ width: isMobile ? "90%" : "20%", height: "auto" }}
-            className="avatarImg"
-          />
-          <div className="heroContent">
-            <FadeContent
-              blur={true}
-              duration={1500}
-              easing="ease-out"
-              initialOpacity={0}
-            >
-              <h1>Ahmed El-Shennawy</h1>
-            </FadeContent>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="img p-0"
+          >
+            <Image
+              src="/avatar/down.webp"
+              alt="character"
+              width={500}
+              height={350}
+              priority
+              quality={85}
+              sizes={isMobile ? "90vw" : "20vw"}
+              style={{ width: isMobile ? "90%" : "20%", height: "auto" }}
+              className="avatarImg"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="heroContent"
+          >
+            <h1>Ahmed El-Shennawy</h1>
             <TextType
               text={[
                 "your designer",
@@ -56,7 +62,7 @@ function About() {
                 <FaArrowCircleRight />
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div
           id="more"

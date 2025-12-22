@@ -59,6 +59,7 @@ function ProjectsComponent() {
                 width={500}
                 height={isMobile ? 250 : 300}
                 priority
+                loading="eager"
                 quality={85}
                 onClick={() => toProductDetails(project.id)}
               />
