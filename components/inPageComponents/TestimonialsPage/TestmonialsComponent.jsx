@@ -160,18 +160,18 @@ function TestmonialsComponent() {
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id}>
-                <div className="reviewItem text-center glassmorphism py-3 px-1">
-                  <h4 className="mb-2">{testimonial.name}</h4>
+                <div className="reviewItem text-center glassmorphism py-3 px-2">
+                  <h4 className="mb-1">{testimonial.name}</h4>
                   <Rating
                     value={testimonial.rate || 0}
                     precision={0.5}
-                    size="small"
+                    size="large"
                     readOnly
                     emptyIcon={
                       <StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />
                     }
                   />
-                  <h4 className="mt-2">{testimonial.note}</h4>
+                  <h5 className="mt-1">{testimonial.note}</h5>
                 </div>
               </SwiperSlide>
             ))}
