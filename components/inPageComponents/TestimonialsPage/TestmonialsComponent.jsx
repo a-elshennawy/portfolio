@@ -8,7 +8,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { CircularProgress } from "@mui/material";
-import toast from "react-hot-toast";
+import Loading from "@/app/loading";
+import CustomeComponent from "@/components/CustomeComponent/CustomeComponent";
+import useMobile from "@/hooks/useMobile";
+import { TbXboxXFilled } from "react-icons/tb";
+import { FaCheckCircle } from "react-icons/fa";
+import { AnimatePresence, motion } from "motion/react";
 
 function TestmonialsComponent() {
   const [value, setValue] = React.useState(3.5);
@@ -20,6 +25,7 @@ function TestmonialsComponent() {
   const [customerName, setCustomerName] = React.useState("");
   const [testmonialText, setTestmonialText] = React.useState("");
   const [sending, setSending] = React.useState(false);
+  const { isMobile } = useMobile();
 
   const fetchTestimonials = async () => {
     setLoading(true);
@@ -62,6 +68,7 @@ function TestmonialsComponent() {
       if (!customerName.trim() || !testmonialText.trim()) {
         setError("Please fill in all fields");
         setSending(false);
+        setTimeout(() => setError(null), 3000);
         return;
       }
 
@@ -82,6 +89,7 @@ function TestmonialsComponent() {
       setTimeout(() => setSuccess(null), 3000);
     } catch (err) {
       setError(err.message || "An error occurred");
+      setTimeout(() => setError(null), 3000);
     } finally {
       setSending(false);
     }
@@ -89,12 +97,44 @@ function TestmonialsComponent() {
 
   return (
     <>
+      <AnimatePresence>
+        {error && (
+          <motion.div
+            className="submitToast glassmorphism errorToast p-2"
+            initial={{ opacity: 0, scale: 0, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
+          >
+            {error} <TbXboxXFilled />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {success && (
+          <motion.div
+            className="submitToast glassmorphism sucessToast p-2"
+            initial={{ opacity: 0, scale: 0, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
+          >
+            {success} <FaCheckCircle />
+          </motion.div>
+        )}
+      </AnimatePresence>
       {/* Slider Section */}
       <div className="col-11 col-md-8">
-        {loading && <p>Loading testimonials...</p>}
+        {loading && <Loading />}
 
         {!loading && testimonials.length === 0 ? (
-          <p>No testimonials yet. Be the first to leave a review!</p>
+          <CustomeComponent
+            imgSrc={"/avatar/bored.webp"}
+            imgWidth={isMobile ? 400 : 500}
+            imgHeight={isMobile ? 300 : 400}
+            text="no reviews yet, be the first"
+          />
         ) : (
           <Swiper
             modules={[Autoplay]}
@@ -139,19 +179,6 @@ function TestmonialsComponent() {
           className="glassmorphism text-center p-3 row justify-content-center align-items-center gap-1"
         >
           <h3>Submit a Review</h3>
-
-          {error && (
-            <div className="alert alert-danger col-12" role="alert">
-              {error}
-            </div>
-          )}
-
-          {success && (
-            <div className="alert alert-success col-12" role="alert">
-              {success}
-            </div>
-          )}
-
           <div className="inputContainer col-12 p-0">
             <input
               type="text"
@@ -207,7 +234,7 @@ function TestmonialsComponent() {
             >
               {sending ? (
                 <CircularProgress
-                  size={24}
+                  size={30}
                   sx={{ color: "var(--secondary)" }}
                 />
               ) : (

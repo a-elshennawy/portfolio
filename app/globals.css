@@ -262,6 +262,38 @@ form {
     }
 }
 
+.loader {
+    background-color: #00000000;
+    backdrop-filter: blur(1.25rem);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11111;
+
+    img {
+        margin: auto !important;
+        transition: all 0.3s ease-in-out;
+        animation: loader 1s infinite;
+    }
+}
+
+@keyframes loader {
+    0% {
+        filter: drop-shadow(0 0 0.313rem var(--secondary));
+    }
+    50% {
+        filter: drop-shadow(0 0 0.625rem var(--secondary));
+    }
+    100% {
+        filter: drop-shadow(0 0 0.313rem var(--secondary));
+    }
+}
+
 ::-webkit-scrollbar {
     display: none;
 }

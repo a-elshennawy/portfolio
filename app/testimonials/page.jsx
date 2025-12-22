@@ -15,13 +15,11 @@ function Testimonials() {
           <Image
             src="/avatar/proud.webp"
             alt="character"
-            width={isMobile ? 400 : 500}
+            width={isMobile ? 400 : 600}
             height={isMobile ? 400 : 600}
             priority
-            sizes={isMobile ? "100vw" : "40vw"}
             style={{
-              width: isMobile ? "100%" : "40%",
-              top: isMobile ? "10%" : "8%",
+              top: isMobile ? "10%" : "20%",
               height: "auto",
             }}
             className="avatarImg"

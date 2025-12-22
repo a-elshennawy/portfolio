@@ -1,19 +1,20 @@
+"use client";
 import Image from "next/image";
-
-function Loader() {
+function Loading() {
   return (
     <>
-      <div className="loader">
+      <div className="loader text-center">
         <Image
           src="/favicon.png"
           alt="logo"
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           priority
+          quality={85}
         />
       </div>
     </>
   );
 }
 
-export default Loader;
+export default Loading;

@@ -8,6 +8,7 @@ import "swiper/css";
 import RelatedProjects from "@/components/inPageComponents/ProjectsPage/RelatedProjects";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
+import Loading from "@/app/loading";
 
 function ProductDetails({ params }) {
   const resolvedParams = use(params);
@@ -20,21 +21,23 @@ function ProductDetails({ params }) {
   const { isMobile } = useMobile();
 
   useEffect(() => {
-    fetch("/API/projects.json")
-      .then((response) => response.json())
-      .then((data) => {
+    const fetchProject = async () => {
+      try {
+        const response = await fetch("/API/projects.json");
+        const data = await response.json();
         const foundProject = data.projects.find(
           (p) => p.id === parseInt(resolvedParams.id),
         );
         setProject(foundProject);
         setSelectedImg(foundProject.thumbnail);
         setProjectImgs(foundProject.images);
-        setLoading(false);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error(error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+    fetchProject();
   }, [resolvedParams.id]);
 
   useEffect(() => {
@@ -74,7 +77,7 @@ function ProductDetails({ params }) {
   }, [projectImgs]);
 
   if (loading) {
-    return <div className="container py-5">Loading...</div>;
+    return <Loading />;
   }
 
   if (!project) {
