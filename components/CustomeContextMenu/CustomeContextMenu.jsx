@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CustomContextMenu() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -80,47 +81,68 @@ export default function CustomContextMenu() {
         <ul>
           <Link href={"/"}>
             <li>
-              home{" "}
-              <img src="/icons/contextMenuIcons/home.png" alt="home icon" />
+              home
+              <Image
+                src="/icons/contextMenuIcons/home.png"
+                alt="home icons"
+                width={20}
+                height={20}
+              />
             </li>
           </Link>
           <Link href={"/about"}>
             <li>
               about
-              <img src="/icons/contextMenuIcons/about.png" alt="about icon" />
+              <Image
+                src="/icons/contextMenuIcons/info.png"
+                alt="about icon"
+                width={20}
+                height={20}
+              />
             </li>
           </Link>
           <Link href={"/contact"}>
             <li>
               contact
-              <img
+              <Image
                 src="/icons/contextMenuIcons/contacts.png"
-                alt="contacts icon"
+                alt="phone icon"
+                width={20}
+                height={20}
               />
             </li>
           </Link>
           <Link href={"https://wa.me/201033926177"} target="_blank">
             <li>
               whatsApp
-              <img
+              <Image
                 src="/icons/contextMenuIcons/whatsapp.png"
                 alt="whatsapp icon"
+                width={20}
+                height={20}
               />
             </li>
           </Link>
           <Link href={"https://www.linkedin.com/in/shennawyz"} target="_blank">
             <li>
               linkedIn
-              <img
+              <Image
                 src="/icons/contextMenuIcons/linkedin.png"
                 alt="linkedin icon"
+                width={20}
+                height={20}
               />
             </li>
           </Link>
           <Link href={"https://github.com/a-elshennawy"} target="_blank">
             <li>
               github
-              <img src="/icons/contextMenuIcons/github.png" alt="github icon" />
+              <Image
+                src="/icons/contextMenuIcons/github.png"
+                alt="github icon"
+                width={20}
+                height={20}
+              />
             </li>
           </Link>
         </ul>
