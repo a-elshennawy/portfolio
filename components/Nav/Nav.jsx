@@ -1,20 +1,18 @@
 "use client";
 import { ViewTransitions } from "next-view-transitions";
 import { motion } from "motion/react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Nav.css";
 import Image from "next/image";
 import Tooltip from "@mui/material/Tooltip";
 import { useLocale } from "next-intl";
-import { Link as IntlLink } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 
 function Nav() {
   const pathname = usePathname();
   const locale = useLocale();
   const otherLocale = locale === "en" ? "ar" : "en";
 
-  // Remove locale from pathname for comparison
   const pathWithoutLocale = pathname.replace(/^\/(en|ar)/, "") || "/";
 
   return (
@@ -103,7 +101,7 @@ function Nav() {
           </ViewTransitions>
           <ViewTransitions>
             <Tooltip title="language switch" placement="bottom" arrow>
-              <IntlLink
+              <Link
                 href={pathWithoutLocale}
                 locale={otherLocale}
                 className="navItem"
@@ -114,7 +112,7 @@ function Nav() {
                   width={30}
                   height={30}
                 />
-              </IntlLink>
+              </Link>
             </Tooltip>
           </ViewTransitions>
         </motion.div>
