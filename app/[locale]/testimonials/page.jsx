@@ -13,35 +13,24 @@ function Testimonials() {
 
   return (
     <>
-      <section className="testimonials text-center">
+      <section className="testimonials p-0 text-center z-2">
         <div className="hero">
-          <motion.div
-            className="img p-0"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <Image
-              src="/avatar/proud.webp"
-              alt="character"
-              width={isMobile ? 400 : 600}
-              height={isMobile ? 400 : 600}
-              priority
-              style={{
-                top: isMobile ? "10%" : "20%",
-                height: "auto",
-              }}
-              className="avatarImg"
-            />
-          </motion.div>
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="heroContent"
-            style={{ top: isMobile ? "50%" : "70%" }}
           >
+            <div className="img p-0">
+              <Image
+                src="/avatar/proud.webp"
+                alt="character"
+                width={isMobile ? 400 : 600}
+                height={isMobile ? 350 : 500}
+                priority
+                className="avatarImg"
+              />
+            </div>
             <div className="mt-3 p-1">
               <Link
                 className="glassmorphism basicBtn"

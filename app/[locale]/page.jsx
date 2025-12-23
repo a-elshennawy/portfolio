@@ -52,28 +52,16 @@ export default function Home() {
             </Link>
           </div>
         </motion.div>
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="whatsAppBtn"
-        >
-          <Link href="https://wa.me/201033926177" target="_blank">
-            <TbBrandWhatsappFilled />
-          </Link>
-        </motion.button>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="img p-0"
-          style={{
-            right: isMobile ? "9%" : "5%",
-          }}
         >
           <Image
-            src="/avatar/pointingRight.webp"
-            alt="character"
+            src="/avatar/welcoming.webp"
+            alt="waving avatar"
             width={350}
             height={300}
             priority

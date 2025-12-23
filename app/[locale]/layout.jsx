@@ -21,7 +21,7 @@ export default async function RootLayout({ children, params }) {
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <CustomContextMenu />
+          {/* <CustomContextMenu />*/}
           <Nav />
           <div
             style={{

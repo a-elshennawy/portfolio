@@ -19,48 +19,10 @@
         }
     }
 
-    .whatsAppBtn {
-        position: absolute;
-        bottom: 20%;
-        right: 2%;
-        transform: translate(-20%, -2%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 3.125rem;
-        height: 3.125rem;
-        border-radius: 50%;
-        background-color: #00ff51;
-        border: none;
-        transition: all 0.3s ease-in-out;
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            svg {
-                color: var(--secondary);
-                font-size: 1.875rem;
-                transition: all 0.3s ease-in-out;
-            }
-        }
-
-        &:hover {
-            background-color: var(--secondary);
-            cursor: url("/cursor/click.png"), default;
-            a {
-                svg {
-                    color: #00ff51;
-                }
-            }
-        }
-    }
-
     .img {
         position: absolute;
+        right: 0%;
         bottom: 0%;
-        transform: translate(-5%);
         width: fit-content;
     }
 }

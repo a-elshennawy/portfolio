@@ -22,27 +22,18 @@ function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="img p-0"
+            className="heroContent text-center"
           >
-            <Image
-              src="/avatar/down.webp"
-              alt="character"
-              width={500}
-              height={350}
-              priority
-              quality={85}
-              sizes={isMobile ? "90vw" : "20vw"}
-              style={{ width: isMobile ? "90%" : "20%", height: "auto" }}
-              className="avatarImg"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="heroContent"
-          >
+            <div className="img p-0">
+              <Image
+                src="/avatar/down.webp"
+                alt="character"
+                width={isMobile ? 400 : 500}
+                height={isMobile ? 350 : 400}
+                priority
+                quality={85}
+              />
+            </div>
             <h1>{t("title")}</h1>
             <TextType
               text={[
