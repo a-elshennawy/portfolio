@@ -62,8 +62,8 @@ export default function Home() {
           <Image
             src="/avatar/welcoming.webp"
             alt="waving avatar"
-            width={350}
-            height={300}
+            width={isMobile ? 300 : 350}
+            height={isMobile ? 250 : 300}
             priority
             loading="eager"
             quality={85}
