@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
-import Loading from "@/app/loading";
+import Loading from "../../../app/[locale]/loading";
 
 function ProjectsComponent() {
   const [projects, setProjects] = useState([]);

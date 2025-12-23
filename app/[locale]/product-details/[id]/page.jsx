@@ -9,7 +9,8 @@ import "swiper/css";
 import RelatedProjects from "@/components/inPageComponents/ProjectsPage/RelatedProjects";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
-import Loading from "@/app/loading";
+import Loading from "../../../../app/[locale]/loading";
+import { useTranslations } from "next-intl";
 
 function ProductDetails({ params }) {
   const resolvedParams = use(params);
@@ -20,6 +21,7 @@ function ProductDetails({ params }) {
   const ImgSwiperRef = useRef(null);
   const router = useRouter();
   const { isMobile } = useMobile();
+  const t = useTranslations("projects");
 
   useEffect(() => {
     const fetchProject = async () => {
@@ -108,14 +110,22 @@ function ProductDetails({ params }) {
             transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
             className="imgSide col-11 col-md-5 p-0"
           >
-            <Image
-              src={selectedImg}
-              alt={project.title}
-              width={isMobile ? 400 : 800}
-              height={isMobile ? 250 : 500}
-              priority
-              quality={85}
-            />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
+              className="mainImg p-0"
+            >
+              <Image
+                src={selectedImg}
+                alt={project.title}
+                width={isMobile ? 400 : 800}
+                height={isMobile ? 250 : 500}
+                priority
+                quality={85}
+              />
+            </motion.div>
+
             <div className="thumbnailsSlider glassmorphism p-2 my-2 imgsSwiper swiper">
               <div className="swiper-wrapper">
                 {projectImgs.map((img, index) => (
@@ -162,7 +172,7 @@ function ProductDetails({ params }) {
                 target="_blank"
                 className="basicBtn glassmorphism p-1"
               >
-                live preview
+                {t("live_preview")}
               </Link>
             </div>
           </motion.div>

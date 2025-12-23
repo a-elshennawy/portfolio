@@ -5,8 +5,11 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import ContactForm from "@/components/inPageComponents/ContactPage/ContactForm";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 function Contact() {
+  const t = useTranslations("contact");
+
   return (
     <>
       <section className="contact p-0 text-center z-2">
@@ -24,9 +27,9 @@ function Contact() {
                 className="glassmorphism basicBtn contactBtn"
                 href="#contactForm"
               >
-                book your call
+                {t("button_1")}
                 <FaArrowCircleRight />
-              </Link>{" "}
+              </Link>
             </motion.div>
           </div>
         </div>

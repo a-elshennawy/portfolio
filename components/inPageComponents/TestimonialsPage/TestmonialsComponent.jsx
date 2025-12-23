@@ -8,12 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { CircularProgress } from "@mui/material";
-import Loading from "@/app/loading";
+import Loading from "../../../app/[locale]/loading";
 import CustomeComponent from "@/components/CustomeComponent/CustomeComponent";
 import useMobile from "@/hooks/useMobile";
 import { TbXboxXFilled } from "react-icons/tb";
 import { FaCheckCircle } from "react-icons/fa";
 import { AnimatePresence, motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 function TestmonialsComponent() {
   const [value, setValue] = React.useState(3.5);
@@ -26,6 +27,7 @@ function TestmonialsComponent() {
   const [testmonialText, setTestmonialText] = React.useState("");
   const [sending, setSending] = React.useState(false);
   const { isMobile } = useMobile();
+  const t = useTranslations("testimonials");
 
   const fetchTestimonials = async () => {
     setLoading(true);
@@ -192,7 +194,7 @@ function TestmonialsComponent() {
           onSubmit={handleSubmit}
           className="glassmorphism text-center p-3 row justify-content-center align-items-center gap-1"
         >
-          <h3>Submit a Review</h3>
+          <h3>{t("submit_review")}</h3>
           <div className="inputContainer col-12 p-0">
             <input
               type="text"
@@ -200,7 +202,7 @@ function TestmonialsComponent() {
               value={customerName}
               onChange={(e) => setCustomerName(e.target.value)}
               disabled={sending}
-              placeholder="enter your name..."
+              placeholder={t("name")}
             />
           </div>
 
@@ -236,7 +238,7 @@ function TestmonialsComponent() {
               onChange={(e) => setTestmonialText(e.target.value)}
               disabled={sending}
               rows="4"
-              placeholder="write your note..."
+              placeholder={t("review_text")}
             ></textarea>
           </div>
 
@@ -252,7 +254,7 @@ function TestmonialsComponent() {
                   sx={{ color: "var(--secondary)" }}
                 />
               ) : (
-                "Submit"
+                t("submit")
               )}
             </button>
           </div>

@@ -5,9 +5,11 @@ import Link from "next/link";
 import useMobile from "@/hooks/useMobile";
 import TestmonialsComponent from "@/components/inPageComponents/TestimonialsPage/TestmonialsComponent";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 function Testimonials() {
   const { isMobile } = useMobile();
+  const t = useTranslations("testimonials");
 
   return (
     <>
@@ -45,7 +47,7 @@ function Testimonials() {
                 className="glassmorphism basicBtn"
                 href="#testimonialsSection"
               >
-                why trust me ?
+                {t("button_1")}
               </Link>
             </div>
           </motion.div>

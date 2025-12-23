@@ -7,6 +7,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { TbXboxXFilled } from "react-icons/tb";
 import { FaCheckCircle } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 function ContactForm() {
   const { isMobile } = useMobile();
@@ -17,6 +18,8 @@ function ContactForm() {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const t = useTranslations("contact");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
@@ -117,7 +120,7 @@ function ContactForm() {
           />
         </div>
         <div className="inputContainer col-12">
-          <label>name</label>
+          <label>{t("name")}</label>
           <input
             className="glassmorphism"
             type="text"
@@ -127,7 +130,7 @@ function ContactForm() {
           />
         </div>
         <div className="inputContainer col-12">
-          <label>phone number</label>
+          <label>{t("number")}</label>
           <input
             className="glassmorphism"
             type="tel"
@@ -137,7 +140,7 @@ function ContactForm() {
           />
         </div>
         <div className="inputContainer col-12">
-          <label>email</label>
+          <label>{t("email")}</label>
           <input
             className="glassmorphism"
             type="email"
@@ -147,7 +150,7 @@ function ContactForm() {
           />
         </div>
         <div className="inputContainer col-12">
-          <label>additional note</label>
+          <label>{t("note")}</label>
           <textarea
             className="glassmorphism"
             rows={5}
@@ -162,7 +165,7 @@ function ContactForm() {
             {sending ? (
               <CircularProgress size={30} sx={{ color: "var(--secondary)" }} />
             ) : (
-              "Submit"
+              t("submit")
             )}
           </button>
         </div>

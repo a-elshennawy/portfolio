@@ -1,0 +1,38 @@
+{
+  "home": {
+    "title": "function meets finesse.",
+    "subtitle": "meet shennawy, pixel perfectionist.",
+    "button_1": "know more",
+    "button_2": "contact"
+  },
+  "about": {
+    "title": "Ahmed El-Shennawy",
+    "subtitle_1": "your designer",
+    "subtitle_2": "your friendly developer",
+    "subtitle_3": "your product manager",
+    "subtitle_4": "your tech support",
+    "subtitle_5": "your next right choice",
+    "button_1": "need to know",
+    "section_1_title": "FOCUS POINTS",
+    "section_2_title": "HOW TO ?"
+  },
+  "contact": {
+    "button_1": "book your call",
+    "name": "name",
+    "number": "phone number",
+    "email": "email address",
+    "note": "note",
+    "submit": "submit"
+  },
+  "projects": {
+    "live_preview": "live preview",
+    "similar": "similar projects"
+  },
+  "testimonials": {
+    "button_1": "why trust me ?",
+    "submit_review": "send a review",
+    "name": "your name...",
+    "review_text": "write your note...",
+    "submit": "submit"
+  }
+}

@@ -8,8 +8,11 @@ import { TbBrandWhatsappFilled } from "react-icons/tb";
 import { FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 export default function Home() {
   const { isMobile } = useMobile();
+  const t = useTranslations("home");
 
   useEffect(() => {
     // @ts-expect-error - no props needed here
@@ -27,10 +30,10 @@ export default function Home() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="content col-10 col-md-3 p-2"
         >
-          <h1 className="mb-2">function meets finesse.</h1>
+          <h1 className="mb-2">{t("title")}</h1>
 
           <TextType
-            text={["meet shennawy, pixel perfectionist."]}
+            text={[t("subtitle")]}
             style={{ fontSize: "1.5rem" }}
             typingSpeed={75}
             pauseDuration={1500}
@@ -40,11 +43,11 @@ export default function Home() {
           />
           <div className="mt-3 p-1">
             <Link className="glassmorphism basicBtn homeBtn" href="/about">
-              know more
+              {t("button_1")}
               <FaArrowCircleRight />
             </Link>
             <Link className="glassmorphism basicBtn homeBtn" href="/contact">
-              contact
+              {t("button_2")}
               <FaArrowCircleRight />
             </Link>
           </div>

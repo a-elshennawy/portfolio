@@ -5,12 +5,14 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 function RelatedProjects({ currentProjectId, currentProjectTags }) {
   const [relatedProjects, setRelatedProjects] = useState([]);
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const { isMobile } = useMobile();
+  const t = useTranslations("projects");
 
   useEffect(() => {
     if (!currentProjectTags || currentProjectTags.length === 0) {
@@ -60,7 +62,7 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
 
   return (
     <>
-      <h3 className="mb-2">similar projects</h3>
+      <h3 className="mb-2">{t("similar")}</h3>
       {relatedProjects.map((project) => (
         <motion.div
           initial={{ opacity: 0, y: 20 }}

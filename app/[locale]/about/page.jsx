@@ -8,9 +8,12 @@ import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessCom
 import { FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 function About() {
   const { isMobile } = useMobile();
+  const t = useTranslations("about");
+
   return (
     <>
       <section className="about p-0 text-center z-2">
@@ -40,14 +43,14 @@ function About() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="heroContent"
           >
-            <h1>Ahmed El-Shennawy</h1>
+            <h1>{t("title")}</h1>
             <TextType
               text={[
-                "your designer",
-                "your friendly developer",
-                "your product manager",
-                "your tech support",
-                "your next right choice",
+                t("subtitle_1"),
+                t("subtitle_2"),
+                t("subtitle_3"),
+                t("subtitle_4"),
+                t("subtitle_5"),
               ]}
               style={{ fontSize: "1.25rem" }}
               typingSpeed={75}
@@ -58,7 +61,7 @@ function About() {
             />
             <div className="mt-5 p-1">
               <Link className="glassmorphism basicBtn aboutBtn" href={"#more"}>
-                need to know
+                {t("button_1")}
                 <FaArrowCircleRight />
               </Link>
             </div>
@@ -69,12 +72,12 @@ function About() {
           className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
         >
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-3 m-0">
-            <h2>FOCUS POINTS</h2>
+            <h2>{t("section_1_title")}</h2>
             <ApproachComponent />
           </div>
 
           <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
-            <h2>HOW TO ?</h2>
+            <h2>{t("section_2_title")}</h2>
             <ProcessComponent />
           </div>
         </div>
