@@ -34,5 +34,14 @@
     "name": "اسمك...",
     "review_text": "اكتب تعليقك...",
     "submit": "ارسال"
+  },
+  "toasts": {
+    "error": "حدث خطأ ما ..  معلش",
+    "empty_field_error": "من فضلك اكمل البيانات",
+    "contact_request_success": "تم ارسال طلبك",
+    "review_form_success": "شكرا على تقييمك"
+  },
+  "texts": {
+    "no_reviews": "لا يوجد تقييمات ..  كن الأول"
   }
 }

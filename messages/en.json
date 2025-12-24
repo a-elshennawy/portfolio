@@ -34,5 +34,11 @@
     "name": "your name...",
     "review_text": "write your note...",
     "submit": "submit"
+  },
+  "toasts": {
+    "error": "error occurred ..  sorry",
+    "empty_field_error": "please fill in all fields",
+    "contact_request_success": "your request has been sent",
+    "review_form_success": "Thanks for your review!"
   }
 }

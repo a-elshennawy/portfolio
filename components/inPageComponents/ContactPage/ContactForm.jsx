@@ -19,6 +19,7 @@ function ContactForm() {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
   const t = useTranslations("contact");
+  const tToast = useTranslations("toasts");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +34,7 @@ function ContactForm() {
         !email.trim() ||
         !note.trim()
       ) {
-        setError("please fill in all fields");
+        setError(tToast("empty_field_error"));
         setSending(false);
         setTimeout(() => setError(null), 3000);
         return;
@@ -60,14 +61,14 @@ function ContactForm() {
         }),
       });
 
-      setSuccess("your request has been sent");
+      setSuccess(tToast("contact_request_success"));
       setCustomerName("");
       setPhoneNumber("");
       setEmail("");
       setNote("");
       setTimeout(() => setSuccess(null), 3000);
-    } catch (error) {
-      setError(err.message || "An error occurred");
+    } catch (err) {
+      setError(err.message || tToast("error"));
       setTimeout(() => setError(null), 3000);
     } finally {
       setSending(false);

@@ -28,6 +28,7 @@ function TestmonialsComponent() {
   const [sending, setSending] = React.useState(false);
   const { isMobile } = useMobile();
   const t = useTranslations("testimonials");
+  const tToast = useTranslations("toasts");
 
   const fetchTestimonials = async () => {
     setLoading(true);
@@ -68,7 +69,7 @@ function TestmonialsComponent() {
 
     try {
       if (!customerName.trim() || !testmonialText.trim()) {
-        setError("Please fill in all fields");
+        setError(tToast("empty_field_error"));
         setSending(false);
         setTimeout(() => setError(null), 3000);
         return;
@@ -84,13 +85,13 @@ function TestmonialsComponent() {
 
       if (error) throw error;
 
-      setSuccess("Thanks for your review!");
+      setSuccess(tToast("review_form_success"));
       setCustomerName("");
       setTestmonialText("");
       setValue(3.5);
       setTimeout(() => setSuccess(null), 3000);
     } catch (err) {
-      setError(err.message || "An error occurred");
+      setError(err.message || tToast("error"));
       setTimeout(() => setError(null), 3000);
     } finally {
       setSending(false);
