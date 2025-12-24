@@ -1,9 +1,10 @@
 import SpotlightCard from "@/components/UI/SpotlightCard/SpotlightCard";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 function ProcessComponent() {
+  const locale = useLocale();
   const t = useTranslations("processCards");
 
   const ProcessCards = [
@@ -89,11 +90,11 @@ function ProcessComponent() {
               quality={85}
             />
 
-            <h3 className="mb-2">
+            <h3 className="mb-2" dir={locale === "ar" ? "rtl" : "ltr"}>
               <span className="step">{card.step}</span>
               {card.title}
             </h3>
-            <h5>{card.content}</h5>
+            <h5 dir={locale === "ar" ? "rtl" : "ltr"}>{card.content}</h5>
           </SpotlightCard>
         </motion.div>
       ))}

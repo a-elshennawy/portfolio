@@ -4,13 +4,14 @@ import { useEffect } from "react";
 import TextType from "@/components/UI/TextType/TextType";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Home() {
   const { isMobile } = useMobile();
+  const locale = useLocale();
   const t = useTranslations("home");
 
   useEffect(() => {
@@ -41,13 +42,21 @@ export default function Home() {
             cursorCharacter="_"
           />
           <div className="mt-3 p-1">
-            <Link className="glassmorphism basicBtn homeBtn" href="/about">
+            <Link
+              className="glassmorphism basicBtn homeBtn"
+              href="/about"
+              dir={locale === "ar" ? "rtl" : "ltr"}
+            >
               {t("button_1")}
-              <FaArrowCircleRight />
+              {locale === "ar" ? <FaArrowCircleLeft /> : <FaArrowCircleRight />}
             </Link>
-            <Link className="glassmorphism basicBtn homeBtn" href="/contact">
+            <Link
+              className="glassmorphism basicBtn homeBtn"
+              href="/contact"
+              dir={locale === "ar" ? "rtl" : "ltr"}
+            >
               {t("button_2")}
-              <FaArrowCircleRight />
+              {locale === "ar" ? <FaArrowCircleLeft /> : <FaArrowCircleRight />}
             </Link>
           </div>
         </motion.div>

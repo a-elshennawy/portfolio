@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function CustomContextMenu() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
+  const locale = useLocale();
   const t = useTranslations("contextMenu");
 
   useEffect(() => {
@@ -80,7 +81,7 @@ export default function CustomContextMenu() {
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        <ul>
+        <ul dir={locale === "ar" ? "rtl" : "ltr"}>
           <Link href={"/"}>
             <li>
               {t("home")}

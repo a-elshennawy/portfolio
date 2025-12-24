@@ -2,9 +2,10 @@
 import SpotlightCard from "@/components/UI/SpotlightCard/SpotlightCard";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 function ApproachComponent() {
+  const locale = useLocale();
   const t = useTranslations("approachCards");
   const approachCards = [
     {
@@ -68,7 +69,7 @@ function ApproachComponent() {
               quality={85}
             />
             <h3 className="mb-2">{card.title}</h3>
-            <h5>{card.content}</h5>
+            <h5 dir={locale === "ar" ? "rtl" : "ltr"}>{card.content}</h5>
           </SpotlightCard>
         </motion.div>
       ))}

@@ -5,13 +5,14 @@ import TextType from "@/components/UI/TextType/TextType";
 import Link from "next/link";
 import ApproachComponent from "@/components/inPageComponents/AboutPage/ApproachComponent";
 import ProcessComponent from "@/components/inPageComponents/AboutPage/ProcessComponent";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 function About() {
   const { isMobile } = useMobile();
+  const locale = useLocale();
   const t = useTranslations("about");
 
   return (
@@ -51,9 +52,17 @@ function About() {
               cursorCharacter="_"
             />
             <div className="mt-5 p-1">
-              <Link className="glassmorphism basicBtn aboutBtn" href={"#more"}>
+              <Link
+                className="glassmorphism basicBtn aboutBtn"
+                href={"#more"}
+                dir={locale === "ar" ? "rtl" : "ltr"}
+              >
                 {t("button_1")}
-                <FaArrowCircleRight />
+                {locale === "ar" ? (
+                  <FaArrowCircleLeft />
+                ) : (
+                  <FaArrowCircleRight />
+                )}
               </Link>
             </div>
           </motion.div>

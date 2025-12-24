@@ -16,6 +16,12 @@
                     transform: rotate(-45deg);
                 }
             }
+
+            &[dir="rtl"]:hover {
+                svg {
+                    transform: rotate(45deg);
+                }
+            }
         }
     }
 
@@ -24,5 +30,13 @@
         right: 0%;
         bottom: 0%;
         width: fit-content;
+    }
+}
+
+.homeBtn[dir="rtl"] {
+    &:hover {
+        svg {
+            transform: rotate(45deg);
+        }
     }
 }
