@@ -1,0 +1,23 @@
+.lightModeComp {
+    background-color: var(--secondary) !important;
+    color: var(--primary);
+    height: 100dvh;
+    width: 100dvw;
+    position: relative;
+
+    .content {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        width: max-content !important;
+
+        .toHomeBtn {
+            display: block;
+            background-color: var(--primary);
+            color: var(--secondary);
+            width: fit-content;
+            border-radius: 0.938rem;
+        }
+    }
+}

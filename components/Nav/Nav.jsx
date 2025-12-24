@@ -17,6 +17,15 @@ function Nav() {
 
   return (
     <>
+      <Link href="/light-mode" className="lightModeBtn navItem p-1">
+        <Image
+          src={"/icons/contextMenuIcons/lightbulb.png"}
+          alt="home"
+          width={35}
+          height={35}
+        />
+      </Link>
+
       <div className="navContainer row text-center justify-content-center align-items-center m-0">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

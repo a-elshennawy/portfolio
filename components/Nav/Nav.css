@@ -1,3 +1,10 @@
+.lightModeBtn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 11111;
+}
+
 .navContainer {
     padding: 0.625rem 0rem;
     position: fixed;
