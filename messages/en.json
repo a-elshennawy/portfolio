@@ -26,7 +26,93 @@
   },
   "projects": {
     "live_preview": "live preview",
-    "similar": "similar projects"
+    "similar": "similar projects",
+    "0": {
+      "title": "el sokarya shop",
+      "desc": "bilingual watches shop, used BaaS for backend to save time & budget inclusing email notfication for orders and total CRUD system with protected rout and authentication over products"
+    },
+    "1": {
+      "title": "fitguide",
+      "desc": "AI companion for workout, food and more used ai video tracking to rate and improve workouts with also solid feature for calorie tracking"
+    },
+    "2": {
+      "title": "butter cafe",
+      "desc": "this was just my graduation project as a react app using local storage for data persistence like login and signup, orders, reservations and others"
+    },
+    "3": {
+      "title": "galdiator gym",
+      "desc": "a promotional landing page for a commercial gym template"
+    },
+    "4": {
+      "title": "confer",
+      "desc": "a landing page design for a project manager platform"
+    },
+    "5": {
+      "title": "hurst",
+      "desc": "a landing page design for a furniture store"
+    },
+    "6": {
+      "title": "fixera",
+      "desc": "a landing page design for a tech store"
+    },
+    "7": {
+      "title": "fixyland",
+      "desc": "a landing page design for a hotel as a part of a designing competition with no actuall design provided"
+    },
+    "8": {
+      "title": "the cafe",
+      "desc": "a fully functional managment system including orders, revenue, customer reviews and full CRUD functionality"
+    },
+    "9": {
+      "title": "clarity tasks",
+      "desc": "a fully functional task manager including BaaS (firebase) totally free, simple to use & track progress with competition leaderboard and many features to discover also full authentication is granted"
+    },
+    "10": {
+      "title": "spending tracker",
+      "desc": "fully functional based on BaaS money tracking system including changing currencies based on current market rates including authentication and simple design to track spendings from any device"
+    },
+    "11": {
+      "title": "muslim day webApp",
+      "desc": "an islamic webApp offers accurate prayer times, hijri calender (based on geo location) also a random quran verse offering translation and copying feature"
+    },
+    "12": {
+      "title": "socially",
+      "desc": "an anonymous social platform where users can post, like, comment without logging in or using their real identity yet they can use necknames or stay incognito and it's managed totally in firebase"
+    },
+    "13": {
+      "title": "open lab",
+      "desc": "an open source webApp for labs to manage their test fastly and easly including creating pdf version and saving it"
+    },
+    "14": {
+      "title": "event card generator",
+      "desc": "a free, open source webApp to generate various fully customizable event cards including currently 9 templates, +20 fonts (arabic and english), controlling card dimensions, colors and downloading as pdf or png"
+    },
+    "tags": {
+      "ecommerce": "e-commerce",
+      "shop": "shop",
+      "fitness": "fitness",
+      "webApps": "web apps",
+      "hospitality_tech": "hospitality tech",
+      "food": "food",
+      "cafe": "cafe",
+      "promotional": "promotional",
+      "landing_pages": "landing pages",
+      "platform": "platform",
+      "tech": "tech",
+      "online_services": "online services",
+      "managment_system": "management system",
+      "baas": "BaaS",
+      "task_manager": "task manager",
+      "tools": "tools",
+      "finance": "finance",
+      "muslim": "muslim",
+      "religion": "religion",
+      "social_media": "social media",
+      "open_source": "open source",
+      "labs": "labs",
+      "medical": "medical",
+      "tool": "tool"
+    }
   },
   "testimonials": {
     "button_1": "why trust me ?",
@@ -50,5 +136,29 @@
     "contact": "contact",
     "rating": "rating",
     "whatsApp": "whatsApp"
+  },
+  "approachCards": {
+    "card_1_title": "fast & focused",
+    "card_1_desc": "moving quickly no cutting corners — delivering clean builds fast, then refinig with precision.",
+    "card_2_title": "pixel precision",
+    "card_2_desc": "Every component I craft is intentional — I obsess over alignment, spacing, and visual clarity.",
+    "card_3_title": "mobile first",
+    "card_3_desc": "From the smallest screens up, I design interfaces that feel smooth, natural, and touch-friendly.",
+    "card_4_title": "clarity wins",
+    "card_4_desc": "Whether in code or communication, I keep things clear — no guesswork, no messy logic."
+  },
+  "processCards": {
+    "card_1_title": "Concept & Scope",
+    "card_1_desc": "We align on the must-haves. I listen, ask the hard questions, and craft a clear project roadmap before the first line of code.",
+    "card_2_title": "Design & Clarity",
+    "card_2_desc": "I switch to UI/UX (Figma). Every pixel is intentional—obsessed over alignment, spacing, and a clean, touch-friendly feel across all screen sizes.",
+    "card_3_title": "Rapid Prototype",
+    "card_3_desc": "Moving quickly, no cutting corners. I deliver a clean, component-based front-end build and integrate the BaaS (Firebase/Supabase) for rapid functionality.",
+    "card_4_title": "Live Review & Refine",
+    "card_4_desc": "Instant follow-up! I deploy the build to a free host like Vercel right away so you can test it live. We refine with precision based on your real-time feedback.",
+    "card_5_title": "Launch & Handover",
+    "card_5_desc": "Clean code, no guesswork. We finalize the production build and I hand over everything—clear documentation, reusable components, and a smooth deployment process.",
+    "card_6_title": "After Support",
+    "card_6_desc": "I don't vanish post-launch. Bug fixes, feature tweaks, or scaling questions—I'm here to ensure your project stays sharp and adapts as your needs evolve, officially with a support contract or per request payment."
   }
 }

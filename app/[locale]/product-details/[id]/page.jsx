@@ -118,7 +118,7 @@ function ProductDetails({ params }) {
             >
               <Image
                 src={selectedImg}
-                alt={project.title}
+                alt={t(project.title)}
                 width={isMobile ? 400 : 800}
                 height={isMobile ? 250 : 500}
                 priority
@@ -148,7 +148,7 @@ function ProductDetails({ params }) {
             transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
             className="detailsSide text-start col-11 col-md-6 p-0"
           >
-            <h1 className="mb-2">{project.title}</h1>
+            <h1 className="mb-2">{t(project.title)}</h1>
             <div className="stack my-1">
               {project.stack.map((tech) => (
                 <span key={tech} className="techBadge p-1 glassmorphism">
@@ -159,12 +159,12 @@ function ProductDetails({ params }) {
             <div className="tags my-1">
               {project.tags.map((tag) => (
                 <span key={tag} className="tagBadge p-1 glassmorphism">
-                  {tag}
+                  {t(tag)}
                 </span>
               ))}
             </div>
             <div className="desc my-4">
-              <h4>{project.description}</h4>
+              <h4>{t(project.description)}</h4>
             </div>
             <div className="actions">
               <Link

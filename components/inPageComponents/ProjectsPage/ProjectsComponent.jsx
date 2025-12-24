@@ -6,12 +6,14 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
 import Loading from "../../../app/[locale]/loading";
+import { useTranslations } from "next-intl";
 
 function ProjectsComponent() {
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
   const { isMobile } = useMobile();
+  const t = useTranslations("projects");
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -55,7 +57,7 @@ function ProjectsComponent() {
             <div className="p-0 img">
               <Image
                 src={project.thumbnail}
-                alt={project.title}
+                alt={t(project.title)}
                 width={500}
                 height={isMobile ? 150 : 300}
                 priority
@@ -65,11 +67,11 @@ function ProjectsComponent() {
               />
             </div>
             <div className="py-2 px-1 details">
-              <h3 className="mb-2">{project.title}</h3>
+              <h3 className="mb-2">{t(project.title)}</h3>
               <div className="tags">
                 {project.tags.map((tag) => (
                   <span key={tag} className="tag glassmorphism p-1">
-                    {tag}
+                    {t(tag)}
                   </span>
                 ))}
               </div>
