@@ -40,5 +40,15 @@
     "empty_field_error": "please fill in all fields",
     "contact_request_success": "your request has been sent",
     "review_form_success": "Thanks for your review!"
+  },
+  "texts": {
+    "no_reviews": "no reviews yet, be the first"
+  },
+  "contextMenu": {
+    "home": "home",
+    "about": "about",
+    "contact": "contact",
+    "rating": "rating",
+    "whatsApp": "whatsApp"
   }
 }

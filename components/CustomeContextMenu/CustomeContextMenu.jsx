@@ -1,12 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function CustomContextMenu() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
+  const t = useTranslations("contextMenu");
 
   useEffect(() => {
     const handleContextMenu = (e) => {
@@ -81,7 +83,7 @@ export default function CustomContextMenu() {
         <ul>
           <Link href={"/"}>
             <li>
-              home
+              {t("home")}
               <Image
                 src="/icons/contextMenuIcons/home.png"
                 alt="home icons"
@@ -94,7 +96,7 @@ export default function CustomContextMenu() {
           </Link>
           <Link href={"/about"}>
             <li>
-              about
+              {t("about")}
               <Image
                 src="/icons/contextMenuIcons/info.png"
                 alt="about icon"
@@ -107,7 +109,7 @@ export default function CustomContextMenu() {
           </Link>
           <Link href={"/contact"}>
             <li>
-              contact
+              {t("contact")}
               <Image
                 src="/icons/contextMenuIcons/contacts.png"
                 alt="phone icon"
@@ -118,38 +120,25 @@ export default function CustomContextMenu() {
               />
             </li>
           </Link>
+          <Link href={"/testimonials#testimonialsSection"}>
+            <li>
+              {t("rating")}
+              <Image
+                src="/icons/contextMenuIcons/rate.png"
+                alt="phone icon"
+                width={20}
+                height={20}
+                priority
+                loading="eager"
+              />
+            </li>
+          </Link>
           <Link href={"https://wa.me/201033926177"} target="_blank">
             <li>
-              whatsApp
+              {t("whatsApp")}
               <Image
                 src="/icons/contextMenuIcons/whatsapp.png"
                 alt="whatsapp icon"
-                width={20}
-                height={20}
-                priority
-                loading="eager"
-              />
-            </li>
-          </Link>
-          <Link href={"https://www.linkedin.com/in/shennawyz"} target="_blank">
-            <li>
-              linkedIn
-              <Image
-                src="/icons/contextMenuIcons/linkedin.png"
-                alt="linkedin icon"
-                width={20}
-                height={20}
-                priority
-                loading="eager"
-              />
-            </li>
-          </Link>
-          <Link href={"https://github.com/a-elshennawy"} target="_blank">
-            <li>
-              github
-              <Image
-                src="/icons/contextMenuIcons/github.png"
-                alt="github icon"
                 width={20}
                 height={20}
                 priority
