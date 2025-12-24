@@ -128,7 +128,10 @@
     "review_form_success": "Thanks for your review!"
   },
   "texts": {
-    "no_reviews": "no reviews yet, be the first"
+    "no_reviews": "no reviews yet, be the first",
+    "404_img": "/avatar/404.webp",
+    "404_text": "what are you doing here ?",
+    "404_btn": "go home"
   },
   "contextMenu": {
     "home": "home",
