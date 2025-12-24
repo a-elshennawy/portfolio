@@ -77,7 +77,7 @@ function ProcessComponent() {
             delay: card.animationDuration * 0.1,
             ease: "easeInOut",
           }}
-          className="Spotcard col-md-4 col-12 p-0"
+          className="Spotcard col-12 col-md-5 col-lg-4 p-0"
         >
           <SpotlightCard className="p-2" spotlightColor={card.SpotlightColor}>
             <Image

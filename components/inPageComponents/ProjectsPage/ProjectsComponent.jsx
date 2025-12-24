@@ -44,7 +44,7 @@ function ProjectsComponent() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: project.id * 0.1, ease: "easeOut" }}
             key={project.id}
-            className="projectCard glassmorphism col-md-3 col-10 p-0 m-0"
+            className="projectCard glassmorphism col-10 col-md-5 col-lg-3 p-0 m-0"
           >
             <span
               className="glassmorphism toProdDetailsBtn p-1"
@@ -57,7 +57,7 @@ function ProjectsComponent() {
                 src={project.thumbnail}
                 alt={project.title}
                 width={500}
-                height={isMobile ? 250 : 300}
+                height={isMobile ? 150 : 300}
                 priority
                 loading="eager"
                 quality={85}

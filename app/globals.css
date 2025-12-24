@@ -223,6 +223,7 @@ form {
         cursor: url("/cursor/click.png"), default;
         img {
             width: 100%;
+            height: auto;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -298,7 +299,7 @@ form {
     }
 }
 
-.sucessToast {
+.successToast {
     svg {
         font-size: 1.25rem;
         color: #2bfb37;

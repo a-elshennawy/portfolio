@@ -86,7 +86,7 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
               src={project.thumbnail}
               alt={project.title}
               width={500}
-              height={isMobile ? 250 : 350}
+              height={isMobile ? 150 : 300}
               priority
               loading="eager"
               quality={85}

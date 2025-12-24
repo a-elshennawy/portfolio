@@ -62,12 +62,12 @@ function About() {
           id="more"
           className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
         >
-          <div className="spotLightCards col-10 row justify-content-center align-items-center gap-3 m-0">
+          <div className="spotLightCards col-sm-12 col-md-12 col-lg-10 row justify-content-center align-items-center gap-2 m-0">
             <h2>{t("section_1_title")}</h2>
             <ApproachComponent />
           </div>
 
-          <div className="spotLightCards col-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
+          <div className="spotLightCards col-sm-12 col-md-12 col-lg-10 row justify-content-center align-items-center gap-2 p-0 pt-2 my-5 mx-0">
             <h2>{t("section_2_title")}</h2>
             <ProcessComponent />
           </div>

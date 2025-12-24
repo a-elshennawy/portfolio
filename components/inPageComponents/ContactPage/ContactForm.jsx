@@ -93,7 +93,7 @@ function ContactForm() {
       <AnimatePresence>
         {success && (
           <motion.div
-            className="submitToast glassmorphism sucessToast p-2"
+            className="submitToast glassmorphism successToast p-2"
             initial={{ opacity: 0, scale: 0, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0, y: -20 }}
@@ -103,17 +103,21 @@ function ContactForm() {
           </motion.div>
         )}
       </AnimatePresence>
+
       <form
         onSubmit={handleSubmit}
         id="contactForm"
-        className="glassmorphism pt-4 p-2 col-md-3 col-10 row justify-content-center align-items-center gap-3"
+        className="glassmorphism pt-4 p-2 col-10 col-md-5 col-lg-3 row justify-content-center align-items-center gap-2 m-0"
       >
-        <div className="img p-0 m-0" style={{ top: "-280px", margin: "auto" }}>
+        <div
+          className="img p-0 m-0"
+          style={{ top: isMobile ? "-230px" : "-280px", margin: "auto" }}
+        >
           <Image
             src="/avatar/upperBody.webp"
             alt="character"
-            width={isMobile ? 350 : 400}
-            height={300}
+            width={isMobile ? 250 : 300}
+            height={isMobile ? 250 : 300}
             priority
             quality={85}
             loading="eager"
