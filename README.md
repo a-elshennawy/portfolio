@@ -1,4 +1,4 @@
-![my logo](public/upperBody.webp)
+![my logo](public/avatar/upperBody.webp)
 ---
 # Ahmed El-Shennawy
 ---
