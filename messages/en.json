@@ -136,13 +136,13 @@
     "back": "back"
   },
   "contextMenu": {
-    "home": "home",
-    "about": "about",
-    "contact": "contact",
-    "projects": "projects",
-    "lang_switch": "change language",
-    "rating": "rating",
-    "whatsApp": "whatsApp"
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Project",
+    "lang_switch": "Change Language",
+    "rating": "Rating",
+    "whatsApp": "WhatsApp"
   },
   "approachCards": {
     "card_1_title": "fast & focused",
