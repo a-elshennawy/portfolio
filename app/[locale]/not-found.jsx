@@ -4,11 +4,9 @@ import "./not-found.css";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
 
 function notFound() {
   const { isMobile } = useMobile();
-  const t = useTranslations("texts");
   return (
     <>
       <section className="notFound pt-3 text-center z-2">
@@ -18,20 +16,15 @@ function notFound() {
           transition={{ duration: 0.9, ease: "easeInOut" }}
           className="content pt-5 pb-0 row text-center justify-content-center align-items-center m-0"
         >
-          <div className="col-12 p-0">
+          <div className="col-12 mt-3 p-0">
             <Image
-              src={t("404_img")}
+              src="/avatar/404_new.webp"
               alt="404"
-              width={isMobile ? 250 : 400}
-              height={isMobile ? 250 : 400}
+              width={isMobile ? 300 : 600}
+              height={isMobile ? 300 : 600}
               unoptimized
             />
           </div>
-
-          <h4>{t("404_text")}</h4>
-          <button className="mt-2 glassmorphism goHomeBtn">
-            <Link href="/">{t("404_btn")}</Link>
-          </button>
         </motion.div>
       </section>
     </>

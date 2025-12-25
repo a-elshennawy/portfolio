@@ -130,9 +130,6 @@
   },
   "texts": {
     "no_reviews": "no reviews yet, be the first",
-    "404_img": "/avatar/404.webp",
-    "404_text": "what are you doing here ?",
-    "404_btn": "go home",
     "back": "back",
     "lightMode_btn": "turn it off"
   },
