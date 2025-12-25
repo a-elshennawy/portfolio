@@ -1,6 +1,5 @@
 .lightModeComp {
     background-color: var(--secondary) !important;
-    color: var(--primary);
     height: 100dvh;
     width: 100dvw;
     position: relative;

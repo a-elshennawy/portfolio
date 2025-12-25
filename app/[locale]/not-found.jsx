@@ -11,20 +11,19 @@ function notFound() {
   const t = useTranslations("texts");
   return (
     <>
-      <section className="notFound py-5 text-center z-2">
+      <section className="notFound pt-3 text-center z-2">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9, ease: "easeInOut" }}
-          className="content py-5 row text-center justify-content-center align-items-center m-0"
+          className="content pt-5 pb-0 row text-center justify-content-center align-items-center m-0"
         >
           <div className="col-12 p-0">
             <Image
               src={t("404_img")}
               alt="404"
-              width={450}
-              height={500}
-              style={{ width: isMobile ? "100%" : "40%", height: "auto" }}
+              width={isMobile ? 250 : 400}
+              height={isMobile ? 250 : 400}
               unoptimized
             />
           </div>

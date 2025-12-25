@@ -12,15 +12,14 @@ function LightMode() {
     <>
       <section className="z-2 p-0 lightModeComp">
         <div className="content text-center">
-          <h1>{t("lightMode_text")}</h1>
-          <Link className="my-5 mx-auto p-2 toHomeBtn" href="/">
+          <Link className="my-2 mx-auto p-3 toHomeBtn" href="/">
             {t("lightMode_btn")}
           </Link>
           <Image
             src="/avatar/lightMode.webp"
             alt="character"
-            width={isMobile ? 250 : 500}
-            height={isMobile ? 250 : 500}
+            width={isMobile ? 200 : 400}
+            height={isMobile ? 200 : 400}
             quality={85}
             priority
           />
