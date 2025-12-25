@@ -25,6 +25,12 @@
                         transform: rotate(90deg);
                     }
                 }
+
+                &[dir="rtl"]:hover {
+                    svg {
+                        transform: rotate(-90deg);
+                    }
+                }
             }
         }
     }

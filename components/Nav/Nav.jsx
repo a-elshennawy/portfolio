@@ -5,12 +5,13 @@ import { usePathname } from "next/navigation";
 import "./Nav.css";
 import Image from "next/image";
 import Tooltip from "@mui/material/Tooltip";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
 function Nav() {
   const pathname = usePathname();
   const locale = useLocale();
+  const t = useTranslations("contextMenu");
   const otherLocale = locale === "en" ? "ar" : "en";
 
   const pathWithoutLocale = pathname.replace(/^\/(en|ar)/, "") || "/";
@@ -34,7 +35,7 @@ function Nav() {
           className="navDock glassmorphism row justify-content-center align-items-center gap-2 mx-0"
         >
           <ViewTransitions>
-            <Tooltip title="Home" placement="bottom" arrow>
+            <Tooltip title={t("home")} placement="bottom" arrow>
               <Link
                 href="/"
                 className={`navItem ${pathWithoutLocale === "/" ? "active" : ""}`}
@@ -49,7 +50,7 @@ function Nav() {
             </Tooltip>
           </ViewTransitions>
           <ViewTransitions>
-            <Tooltip title="About" placement="bottom" arrow>
+            <Tooltip title={t("about")} placement="bottom" arrow>
               <Link
                 href="/about"
                 className={`navItem ${pathWithoutLocale === "/about" ? "active" : ""}`}
@@ -64,7 +65,7 @@ function Nav() {
             </Tooltip>
           </ViewTransitions>
           <ViewTransitions>
-            <Tooltip title="Projects" placement="bottom" arrow>
+            <Tooltip title={t("projects")} placement="bottom" arrow>
               <Link
                 href="/projects"
                 className={`navItem ${pathWithoutLocale === "/projects" ? "active" : ""}`}
@@ -79,7 +80,7 @@ function Nav() {
             </Tooltip>
           </ViewTransitions>
           <ViewTransitions>
-            <Tooltip title="Testimonials" placement="bottom" arrow>
+            <Tooltip title={t("rating")} placement="bottom" arrow>
               <Link
                 href="/testimonials"
                 className={`navItem ${pathWithoutLocale === "/testimonials" ? "active" : ""}`}
@@ -94,7 +95,7 @@ function Nav() {
             </Tooltip>
           </ViewTransitions>
           <ViewTransitions>
-            <Tooltip title="Contact" placement="bottom" arrow>
+            <Tooltip title={t("contact")} placement="bottom" arrow>
               <Link
                 href="/contact"
                 className={`navItem ${pathWithoutLocale === "/contact" ? "active" : ""}`}
@@ -109,7 +110,7 @@ function Nav() {
             </Tooltip>
           </ViewTransitions>
           <ViewTransitions>
-            <Tooltip title="language switch" placement="bottom" arrow>
+            <Tooltip title={t("lang_switch")} placement="bottom" arrow>
               <Link
                 href={pathWithoutLocale}
                 locale={otherLocale}

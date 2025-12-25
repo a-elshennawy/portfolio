@@ -14,7 +14,7 @@ import useMobile from "@/hooks/useMobile";
 import { TbXboxXFilled } from "react-icons/tb";
 import { FaCheckCircle } from "react-icons/fa";
 import { AnimatePresence, motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 function TestmonialsComponent() {
   const [value, setValue] = React.useState(3.5);
@@ -27,6 +27,7 @@ function TestmonialsComponent() {
   const [testmonialText, setTestmonialText] = React.useState("");
   const [sending, setSending] = React.useState(false);
   const { isMobile } = useMobile();
+  const locale = useLocale();
   const t = useTranslations("testimonials");
   const tToast = useTranslations("toasts");
 
@@ -203,6 +204,7 @@ function TestmonialsComponent() {
               value={customerName}
               onChange={(e) => setCustomerName(e.target.value)}
               disabled={sending}
+              dir={locale === "ar" ? "rtl" : "ltr"}
               placeholder={t("name")}
             />
           </div>
@@ -239,6 +241,7 @@ function TestmonialsComponent() {
               onChange={(e) => setTestmonialText(e.target.value)}
               disabled={sending}
               rows="4"
+              dir={locale === "ar" ? "rtl" : "ltr"}
               placeholder={t("review_text")}
             ></textarea>
           </div>

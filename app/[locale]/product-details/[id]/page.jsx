@@ -10,7 +10,7 @@ import RelatedProjects from "@/components/inPageComponents/ProjectsPage/RelatedP
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
 import Loading from "../../../../app/[locale]/loading";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 function ProductDetails({ params }) {
   const resolvedParams = use(params);
@@ -21,7 +21,9 @@ function ProductDetails({ params }) {
   const ImgSwiperRef = useRef(null);
   const router = useRouter();
   const { isMobile } = useMobile();
+  const locale = useLocale();
   const t = useTranslations("projects");
+  const tTexts = useTranslations("texts");
 
   useEffect(() => {
     const fetchProject = async () => {
@@ -96,19 +98,20 @@ function ProductDetails({ params }) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
             className="col-11 p-0"
+            dir={locale === "ar" ? "rtl" : "ltr"}
           >
             <button
               className="backBtn glassmorphism"
               onClick={() => router.back()}
             >
-              back
+              {tTexts("back")}
             </button>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: locale === "ar" ? 20 : -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-            className="imgSide col-11 col-md-5 p-0"
+            className={`imgSide col-11 col-md-5 p-0 ${!isMobile && locale === "ar" ? "order-2" : ""}`}
           >
             <motion.div
               initial={{ opacity: 0 }}
@@ -143,10 +146,11 @@ function ProductDetails({ params }) {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: locale === "ar" ? -20 : 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-            className="detailsSide text-start col-11 col-md-6 p-0"
+            className="detailsSide col-11 col-md-6 p-0"
+            dir={locale === "ar" ? "rtl" : "ltr"}
           >
             <h1 className="mb-2">{t(project.title)}</h1>
             <div className="stack my-1">

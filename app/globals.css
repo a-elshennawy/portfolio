@@ -110,6 +110,7 @@ form {
         label {
             display: block;
             text-transform: capitalize;
+            font-weight: bold;
 
             &:hover {
                 cursor: url("/cursor/cursor.png"), default;

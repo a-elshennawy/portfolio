@@ -37,9 +37,9 @@ export default function Home() {
             style={{ fontSize: "1.5rem" }}
             typingSpeed={75}
             pauseDuration={1500}
-            showCursor={true}
+            showCursor={false}
             loop={false}
-            cursorCharacter="_"
+            startOnVisible={true}
           />
           <div className="mt-3 p-1">
             <Link

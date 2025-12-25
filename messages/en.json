@@ -14,7 +14,8 @@
     "subtitle_5": "your next right choice",
     "button_1": "need to know",
     "section_1_title": "FOCUS POINTS",
-    "section_2_title": "HOW TO ?"
+    "section_2_title": "HOW TO",
+    "section_3_title": "MY CURRENT POSITION"
   },
   "contact": {
     "button_1": "book your call",
@@ -131,12 +132,15 @@
     "no_reviews": "no reviews yet, be the first",
     "404_img": "/avatar/404.webp",
     "404_text": "what are you doing here ?",
-    "404_btn": "go home"
+    "404_btn": "go home",
+    "back": "back"
   },
   "contextMenu": {
     "home": "home",
     "about": "about",
     "contact": "contact",
+    "projects": "projects",
+    "lang_switch": "change language",
     "rating": "rating",
     "whatsApp": "whatsApp"
   },

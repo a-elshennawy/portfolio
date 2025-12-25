@@ -4,11 +4,12 @@ import "./Contact.css";
 import Link from "next/link";
 import { motion } from "motion/react";
 import ContactForm from "@/components/inPageComponents/ContactPage/ContactForm";
-import { FaArrowCircleRight } from "react-icons/fa";
-import { useTranslations } from "next-intl";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { useTranslations, useLocale } from "next-intl";
 
 function Contact() {
   const t = useTranslations("contact");
+  const locale = useLocale();
 
   return (
     <>
@@ -26,9 +27,14 @@ function Contact() {
               <Link
                 className="glassmorphism basicBtn contactBtn"
                 href="#contactForm"
+                dir={locale === "ar" ? "rtl" : "ltr"}
               >
                 {t("button_1")}
-                <FaArrowCircleRight />
+                {locale === "ar" ? (
+                  <FaArrowCircleLeft />
+                ) : (
+                  <FaArrowCircleRight />
+                )}
               </Link>
             </motion.div>
           </div>
