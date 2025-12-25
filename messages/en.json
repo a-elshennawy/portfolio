@@ -144,7 +144,8 @@
     "projects": "Project",
     "lang_switch": "Change Language",
     "rating": "Rating",
-    "whatsApp": "WhatsApp"
+    "whatsApp": "WhatsApp",
+    "theme_change": "Change Theme"
   },
   "approachCards": {
     "card_1_title": "fast & focused",

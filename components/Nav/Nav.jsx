@@ -18,14 +18,38 @@ function Nav() {
 
   return (
     <>
-      <Link href="/light-mode" className="lightModeBtn navItem p-1">
-        <Image
-          src={"/icons/contextMenuIcons/lightbulb.png"}
-          alt="home"
-          width={35}
-          height={35}
-        />
-      </Link>
+      <ViewTransitions>
+        <Tooltip title={t("theme_change")} placement="right" arrow>
+          <Link
+            href="/light-mode"
+            className={`lightModeBtn navItem p-1 ${locale === "ar" ? "switchToRight" : ""} `}
+          >
+            <Image
+              src={"/icons/contextMenuIcons/themeSwitcher.png"}
+              alt="home"
+              width={30}
+              height={30}
+            />
+          </Link>
+        </Tooltip>
+      </ViewTransitions>
+
+      <ViewTransitions>
+        <Tooltip title={t("lang_switch")} placement="left" arrow>
+          <Link
+            href={pathWithoutLocale}
+            locale={otherLocale}
+            className={`navItem translationBtn p-1 ${locale === "ar" ? "switchToLeft" : ""}`}
+          >
+            <Image
+              src={"/icons/contextMenuIcons/translate.png"}
+              alt="language switch"
+              width={30}
+              height={30}
+            />
+          </Link>
+        </Tooltip>
+      </ViewTransitions>
 
       <div className="navContainer row text-center justify-content-center align-items-center m-0">
         <motion.div
@@ -33,6 +57,7 @@ function Nav() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
           className="navDock glassmorphism row justify-content-center align-items-center gap-2 mx-0"
+          dir={locale === "ar" ? "rtl" : "ltr"}
         >
           <ViewTransitions>
             <Tooltip title={t("home")} placement="bottom" arrow>
@@ -103,22 +128,6 @@ function Nav() {
                 <Image
                   src={"/icons/contextMenuIcons/contacts.png"}
                   alt="contact"
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            </Tooltip>
-          </ViewTransitions>
-          <ViewTransitions>
-            <Tooltip title={t("lang_switch")} placement="bottom" arrow>
-              <Link
-                href={pathWithoutLocale}
-                locale={otherLocale}
-                className="navItem"
-              >
-                <Image
-                  src={"/icons/contextMenuIcons/translate.png"}
-                  alt="language switch"
                   width={30}
                   height={30}
                 />
