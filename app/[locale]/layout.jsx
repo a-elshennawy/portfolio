@@ -5,6 +5,7 @@ import FloatingLines from "@/components/UI/FloatingLines/FloatingLines";
 import CustomContextMenu from "@/components/CustomeContextMenu/CustomeContextMenu";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Ahmed El-Shennawy",
@@ -42,6 +43,7 @@ export default async function RootLayout({ children, params }) {
             />
           </div>
           {children}
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
