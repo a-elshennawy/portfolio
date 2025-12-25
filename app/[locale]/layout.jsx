@@ -6,6 +6,7 @@ import CustomContextMenu from "@/components/CustomeContextMenu/CustomeContextMen
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Ahmed El-Shennawy",
@@ -44,6 +45,7 @@ export default async function RootLayout({ children, params }) {
           </div>
           {children}
           <SpeedInsights />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
