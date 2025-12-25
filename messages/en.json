@@ -133,7 +133,9 @@
     "404_img": "/avatar/404.webp",
     "404_text": "what are you doing here ?",
     "404_btn": "go home",
-    "back": "back"
+    "back": "back",
+    "lightMode_text": "TURN OFF THAT LIGHT",
+    "lightMode_btn": "turn it off"
   },
   "contextMenu": {
     "home": "Home",
