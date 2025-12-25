@@ -71,7 +71,7 @@ function About() {
           id="more"
           className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
         >
-          <div className="spotLightCards col-sm-12 col-md-12 col-lg-10 row justify-content-center align-items-center gap-2 m-0">
+          <div className="spotLightCards col-sm-12 col-md-12 col-lg-12 row justify-content-center align-items-center gap-1 m-0">
             <motion.h2
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
