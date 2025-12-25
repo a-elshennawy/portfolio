@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
@@ -8,26 +8,79 @@ import { useTranslations, useLocale } from "next-intl";
 export default function CustomContextMenu() {
   const [menuVisible, setMenuVisible] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
+  const [isPositioned, setIsPositioned] = useState(false);
+  const menuRef = useRef(null);
   const locale = useLocale();
   const t = useTranslations("contextMenu");
+  const isRTL = locale === "ar";
 
   useEffect(() => {
     const handleContextMenu = (e) => {
       e.preventDefault();
 
-      setMenuPosition({
-        x: e.pageX,
-        y: e.pageY,
-      });
+      // Reset positioning state
+      setIsPositioned(false);
+
+      // Set initial position off-screen to measure
+      setMenuPosition({ x: -9999, y: -9999 });
       setMenuVisible(true);
+
+      // Calculate proper position after menu renders
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          if (menuRef.current) {
+            const menuRect = menuRef.current.getBoundingClientRect();
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            let x = e.pageX;
+            let y = e.pageY;
+
+            // Adjust horizontal position
+            if (isRTL) {
+              // For RTL, menu appears to the left of cursor
+              x = e.pageX - menuRect.width;
+              // If it goes off the left edge, show it to the right instead
+              if (x < window.scrollX) {
+                x = e.pageX;
+              }
+            } else {
+              // For LTR, check if menu goes off right edge
+              if (e.clientX + menuRect.width > viewportWidth) {
+                x = e.pageX - menuRect.width;
+              }
+            }
+
+            // Adjust vertical position
+            if (e.clientY + menuRect.height > viewportHeight) {
+              y = e.pageY - menuRect.height;
+            }
+
+            // Ensure menu doesn't go off left edge
+            if (x < window.scrollX) {
+              x = window.scrollX + 5;
+            }
+
+            // Ensure menu doesn't go off top edge
+            if (y < window.scrollY) {
+              y = window.scrollY + 5;
+            }
+
+            setMenuPosition({ x, y });
+            setIsPositioned(true);
+          }
+        });
+      });
     };
 
     const handleClick = () => {
       setMenuVisible(false);
+      setIsPositioned(false);
     };
 
     const handleScroll = () => {
       setMenuVisible(false);
+      setIsPositioned(false);
     };
 
     const handleKeyDown = (e) => {
@@ -42,7 +95,6 @@ export default function CustomContextMenu() {
       }
     };
 
-    // Prevent image dragging
     const handleDragStart = (e) => {
       if (e.target.tagName === "IMG") {
         e.preventDefault();
@@ -62,22 +114,27 @@ export default function CustomContextMenu() {
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("dragstart", handleDragStart);
     };
-  }, []);
+  }, [isRTL]);
 
   if (!menuVisible) return null;
 
   return (
     <>
       <motion.div
-        initial={{ height: 0 }}
-        animate={{ height: "auto" }}
-        exit={{ height: 0 }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
+        ref={menuRef}
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{
+          opacity: isPositioned ? 1 : 0,
+          scale: isPositioned ? 1 : 0.95,
+        }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        transition={{ duration: 0.15, ease: "easeOut" }}
         className="contextMenu p-0"
         style={{
           left: `${menuPosition.x}px`,
           top: `${menuPosition.y}px`,
           position: "absolute",
+          visibility: isPositioned ? "visible" : "hidden",
         }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -114,6 +171,19 @@ export default function CustomContextMenu() {
               <Image
                 src="/icons/contextMenuIcons/contacts.png"
                 alt="phone icon"
+                width={20}
+                height={20}
+                priority
+                loading="eager"
+              />
+            </li>
+          </Link>
+          <Link href={"/projects"}>
+            <li>
+              {t("projects")}
+              <Image
+                src="/icons/contextMenuIcons/projects.png"
+                alt="projects icon"
                 width={20}
                 height={20}
                 priority
