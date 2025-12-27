@@ -118,7 +118,7 @@ function TestmonialsComponent() {
       <AnimatePresence>
         {success && (
           <motion.div
-            className="submitToast glassmorphism sucessToast p-2"
+            className="submitToast glassmorphism successToast p-2"
             initial={{ opacity: 0, scale: 0, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0, y: -20 }}
