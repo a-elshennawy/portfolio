@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: "ubuntu";
-    src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-family: "jost";
+    src: url("/fonts/Jost-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -28,7 +28,7 @@ body {
     position: relative;
     background-color: var(--primary) !important;
     color: var(--secondary) !important;
-    font-family: "ubuntu", "cairo" !important;
+    font-family: "jost", "cairo" !important;
     cursor: url("/cursor/cursor.png"), default;
 }
 
