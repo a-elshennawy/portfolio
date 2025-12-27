@@ -145,9 +145,9 @@
   },
   "approachCards": {
     "card_1_title": "fast & focused",
-    "card_1_desc": "moving quickly no cutting corners — delivering clean builds fast, then refinig with precision.",
+    "card_1_desc": "moving quickly no cutting corners delivering clean builds fast, then refinig with precision.",
     "card_2_title": "pixel precision",
-    "card_2_desc": "Every component I craft is intentional — I obsess over alignment, spacing, and visual clarity.",
+    "card_2_desc": "Every component I craft is intentional I obsess over alignment, spacing, and visual clarity.",
     "card_3_title": "mobile first",
     "card_3_desc": "From the smallest screens up, I design interfaces that feel smooth, natural, and touch-friendly.",
     "card_4_title": "clarity wins",
@@ -155,16 +155,10 @@
   },
   "processCards": {
     "card_1_title": "Concept & Scope",
-    "card_1_desc": "We align on the must-haves. I listen, ask the hard questions, and craft a clear project roadmap before the first line of code.",
     "card_2_title": "Design & Clarity",
-    "card_2_desc": "I switch to UI/UX (Figma). Every pixel is intentional—obsessed over alignment, spacing, and a clean, touch-friendly feel across all screen sizes.",
     "card_3_title": "Rapid Prototype",
-    "card_3_desc": "Moving quickly, no cutting corners. I deliver a clean, component-based front-end build and integrate the BaaS (Firebase/Supabase) for rapid functionality.",
     "card_4_title": "Live Review & Refine",
-    "card_4_desc": "Instant follow-up! I deploy the build to a free host like Vercel right away so you can test it live. We refine with precision based on your real-time feedback.",
     "card_5_title": "Launch & Handover",
-    "card_5_desc": "Clean code, no guesswork. We finalize the production build and I hand over everything—clear documentation, reusable components, and a smooth deployment process.",
-    "card_6_title": "After Support",
-    "card_6_desc": "I don't vanish post-launch. Bug fixes, feature tweaks, or scaling questions—I'm here to ensure your project stays sharp and adapts as your needs evolve, officially with a support contract or per request payment."
+    "card_6_title": "After Support"
   }
 }
