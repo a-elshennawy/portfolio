@@ -3,7 +3,7 @@ import "./Home.css";
 import { useEffect } from "react";
 import TextType from "@/components/UI/TextType/TextType";
 import { motion } from "motion/react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import useMobile from "@/hooks/useMobile";
 import Image from "next/image";
