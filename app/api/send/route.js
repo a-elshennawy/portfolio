@@ -26,7 +26,7 @@ export async function POST(req) {
       to: email,
       subject: "Thank you for your request",
       html: `
-      <img src="/favicon.ico" alt="Logo">
+      <img src="https://ahmed-elshennawy.vercel.app/avatar/welcoming.webp" alt="Logo">
         <p>Thank you <strong>${name}</strong> for your contact, I received your request.</p>
         <p>Kindly expect a call within 48 hours from a number <strong>+201033926177</strong> or a whatsApp message in case you are not available</p>
       `,
