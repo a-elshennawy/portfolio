@@ -86,6 +86,16 @@ function TestmonialsComponent() {
 
       if (error) throw error;
 
+      await fetch("/api/sendReview", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: customerName,
+          rate: value,
+          note: testmonialText,
+        }),
+      });
+
       setSuccess(tToast("review_form_success"));
       setCustomerName("");
       setTestmonialText("");
