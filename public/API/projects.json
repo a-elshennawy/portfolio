@@ -12,14 +12,14 @@
         "cloud functions",
         "google oauth"
       ],
-      "role": "i did it all",
-      "thumbnail": "/projects/elsokarya/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/elsokarya/1.webp",
       "images": [
         "/projects/elsokarya/1.webp",
         "/projects/elsokarya/2.webp",
         "/projects/elsokarya/3.webp"
       ],
-      "link": "elsokarya.net"
+      "link": "https://elsokarya.net/"
     },
     {
       "id": 1,
@@ -27,8 +27,8 @@
       "tags": ["tags.fitness", "tags.webApps"],
       "description": "1.desc",
       "stack": ["react"],
-      "role": "front-end dev",
-      "thumbnail": "/projects/fitguide/thumbnail.webp",
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/fitguide/1.webp",
       "images": [
         "/projects/fitguide/1.webp",
         "/projects/fitguide/2.webp",
@@ -42,8 +42,8 @@
       "tags": ["tags.hospitality_tech", "tags.food", "tags.cafe"],
       "description": "2.desc",
       "stack": ["react"],
-      "role": "i did it all",
-      "thumbnail": "/projects/butter/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/butter/1.webp",
       "images": [
         "/projects/butter/1.webp",
         "/projects/butter/2.webp",
@@ -59,8 +59,8 @@
       "tags": ["tags.fitness", "tags.promotional", "tags.landing_pages"],
       "description": "3.desc",
       "stack": ["react"],
-      "role": "i did it all",
-      "thumbnail": "/projects/gladiatorGym/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/gladiatorGym/1.webp",
       "images": [
         "/projects/gladiatorGym/1.webp",
         "/projects/gladiatorGym/2.webp",
@@ -75,8 +75,8 @@
       "tags": ["tags.landing_pages", "tags.platform"],
       "description": "4.desc",
       "stack": ["html", "css", "bootstrap"],
-      "role": "front-end dev",
-      "thumbnail": "/projects/confer/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/confer/1.webp",
       "images": [
         "/projects/confer/1.webp",
         "/projects/confer/2.webp",
@@ -92,8 +92,8 @@
       "tags": ["tags.landing_pages", "tags.ecommerce"],
       "description": "5.desc",
       "stack": ["html", "css", "bootstrap"],
-      "role": "i did it all",
-      "thumbnail": "/projects/hurst/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/hurst/1.webp",
       "images": [
         "/projects/hurst/1.webp",
         "/projects/hurst/2.webp",
@@ -107,8 +107,8 @@
       "tags": ["tags.landing_pages", "tags.tech", "tags.online_services"],
       "description": "6.desc",
       "stack": ["html", "css", "bootstrap"],
-      "role": "i did it all",
-      "thumbnail": "/projects/fixera/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/fixera/1.webp",
       "images": [
         "/projects/fixera/1.webp",
         "/projects/fixera/2.webp",
@@ -127,8 +127,8 @@
       ],
       "description": "7.desc",
       "stack": ["react"],
-      "role": "i did it all",
-      "thumbnail": "/projects/fixyland/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/fixyland/1.webp",
       "images": [
         "/projects/fixyland/1.webp",
         "/projects/fixyland/2.webp",
@@ -152,8 +152,8 @@
       ],
       "description": "8.desc",
       "stack": ["react", "supabase"],
-      "role": "i did it all",
-      "thumbnail": "/projects/theCafe/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/theCafe/1.webp",
       "images": [
         "/projects/theCafe/1.webp",
         "/projects/theCafe/2.webp",
@@ -171,8 +171,8 @@
       "tags": ["tags.webApps", "tags.task_manager", "tags.baas", "tags.tools"],
       "description": "9.desc",
       "stack": ["react", "firebase"],
-      "role": "i did it all",
-      "thumbnail": "/projects/clarityTasks/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/clarityTasks/1.webp",
       "images": [
         "/projects/clarityTasks/1.webp",
         "/projects/clarityTasks/2.webp",
@@ -191,8 +191,8 @@
       "tags": ["tags.webApps", "tags.finance", "tags.baas", "tags.tools"],
       "description": "10.desc",
       "stack": ["react", "firebase"],
-      "role": "i did it all",
-      "thumbnail": "/projects/spendingTracker/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/spendingTracker/1.webp",
       "images": [
         "/projects/spendingTracker/1.webp",
         "/projects/spendingTracker/2.webp",
@@ -209,8 +209,8 @@
       "tags": ["tags.webApps", "tags.muslim", "tags.religion"],
       "description": "11.desc",
       "stack": ["react", "public API"],
-      "role": "i did it all",
-      "thumbnail": "/projects/muslimDay/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/muslimDay/1.webp",
       "images": ["/projects/muslimDay/1.webp", "/projects/muslimDay/2.webp"],
       "link": "https://muslim-day.pages.dev/"
     },
@@ -220,8 +220,8 @@
       "tags": ["tags.webApps", "tags.social_media"],
       "description": "12.desc",
       "stack": ["react", "firebase"],
-      "role": "i did it all",
-      "thumbnail": "/projects/socially/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/socially/1.webp",
       "images": [
         "/projects/socially/1.webp",
         "/projects/socially/2.webp",
@@ -236,7 +236,7 @@
       "description": "13.desc",
       "stack": ["react", "js2pdf", "html2canvas"],
       "role": "i did it all",
-      "thumbnail": "/projects/openLab/thumbnail.webp",
+      "thumbnail": "/projects/openLab/1.webp",
       "images": [
         "/projects/openLab/1.webp",
         "/projects/openLab/2.webp",
@@ -250,8 +250,8 @@
       "tags": ["tags.webApps", "tags.tool"],
       "description": "14.desc",
       "stack": ["nextJs"],
-      "role": "i did it all",
-      "thumbnail": "/projects/eventCards/thumbnail.webp",
+      "role": "roles.did_it_all",
+      "thumbnail": "/projects/eventCards/1.webp",
       "images": [
         "/projects/eventCards/1.webp",
         "/projects/eventCards/2.webp",
@@ -259,6 +259,22 @@
         "/projects/eventCards/4.webp"
       ],
       "link": "https://event-cards.pages.dev/"
+    },
+    {
+      "id": 15,
+      "title": "15.title",
+      "tags": ["tags.agency", "tags.ecommerce", "tags.portfolio"],
+      "description": "15.desc",
+      "stack": ["nextJs"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/dokkan/1.webp",
+      "images": [
+        "/projects/dokkan/1.webp",
+        "/projects/dokkan/2.webp",
+        "/projects/dokkan/3.webp",
+        "/projects/dokkan/4.webp"
+      ],
+      "link": "https://dokkan.agency/"
     }
   ]
 }

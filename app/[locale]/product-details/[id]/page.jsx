@@ -34,7 +34,7 @@ function ProductDetails({ params }) {
           (p) => p.id === parseInt(resolvedParams.id),
         );
         setProject(foundProject);
-        setSelectedImg(foundProject.thumbnail);
+        setSelectedImg(foundProject.images[0]);
         setProjectImgs(foundProject.images);
       } catch (error) {
         console.error(error);
@@ -160,6 +160,9 @@ function ProductDetails({ params }) {
                 </span>
               ))}
             </div>
+            <span className="role my-1 p-1 glassmorphism">
+              {t(project.role)}
+            </span>
             <div className="tags my-1">
               {project.tags.map((tag) => (
                 <span key={tag} className="tagBadge p-1 glassmorphism">

@@ -4,13 +4,14 @@ import { useRouter } from "next/navigation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image from "next/image";
 import useMobile from "@/hooks/useMobile";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { useTranslations } from "next-intl";
 
 function RelatedProjects({ currentProjectId, currentProjectTags }) {
   const [relatedProjects, setRelatedProjects] = useState([]);
   const router = useRouter();
   const [loading, setLoading] = useState(true);
+  const [hoveredProject, setHoveredProject] = useState(null);
   const { isMobile } = useMobile();
   const t = useTranslations("projects");
 
@@ -60,51 +61,76 @@ function RelatedProjects({ currentProjectId, currentProjectTags }) {
     router.push(`/product-details/${id}`);
   };
 
+  const handleMouseEnter = (projectId) => {
+    setHoveredProject(projectId);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  };
+
   return (
     <>
       <h3 className="mb-2">{t("similar")}</h3>
-      {relatedProjects.map((project) => (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.5,
-            delay: project.id * 0.1,
-            ease: "easeInOut",
-          }}
-          key={project.id}
-          className="projectCard glassmorphism col-10 col-md-3 p-0 m-0"
-        >
-          <span
-            className="glassmorphism toProdDetailsBtn p-1"
-            onClick={() => toProductDetails(project.id)}
+      {relatedProjects.map((project) => {
+        const isHovered = hoveredProject === project.id;
+        const displayImage =
+          isHovered && project.images?.[0]
+            ? project.images[1]
+            : project.thumbnail;
+
+        return (
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: project.id * 0.1, ease: "easeOut" }}
+            key={project.id}
+            className="projectCard glassmorphism col-10 col-md-5 col-lg-3 p-0 m-0"
+            onMouseEnter={() => handleMouseEnter(project.id)}
+            onMouseLeave={handleMouseLeave}
           >
-            <FaArrowUpRightFromSquare />
-          </span>
-          <div className="p-0 img">
-            <Image
-              src={project.thumbnail}
-              alt={t(project.title)}
-              width={500}
-              height={isMobile ? 150 : 300}
-              priority
-              loading="eager"
-              quality={85}
+            <span
+              className="glassmorphism toProdDetailsBtn p-1"
               onClick={() => toProductDetails(project.id)}
-            />
-          </div>
-          <div className="py-2 px-1 details">
-            <h3 className="mb-2">{t(project.title)}</h3>
-            <div className="tags">
-              {project.tags.map((tag) => (
-                <span key={tag} className="tag glassmorphism p-1">
-                  {t(tag)}
-                </span>
-              ))}
+            >
+              <FaArrowUpRightFromSquare />
+            </span>
+            <div className="p-0 img">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={displayImage}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                >
+                  <Image
+                    src={displayImage}
+                    alt={t(project.title)}
+                    width={500}
+                    height={isMobile ? 150 : 300}
+                    priority
+                    loading="eager"
+                    quality={85}
+                    onClick={() => toProductDetails(project.id)}
+                  />
+                </motion.div>
+              </AnimatePresence>
             </div>
-          </div>
-        </motion.div>
-      ))}
+            <div className="py-2 px-1 details">
+              <h3 className="mb-2">{t(project.title)}</h3>
+              <div className="tags">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="tag glassmorphism p-1">
+                    {t(tag)}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        );
+      })}
+      )
     </>
   );
 }

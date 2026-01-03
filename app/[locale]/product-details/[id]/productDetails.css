@@ -49,6 +49,12 @@
                     border-radius: 0.625rem;
                 }
             }
+
+            .role {
+                width: fit-content;
+                display: flex;
+                border-radius: 0.625rem;
+            }
         }
     }
 

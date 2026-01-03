@@ -67,10 +67,28 @@ function About() {
             </div>
           </motion.div>
         </div>
+
         <div
           id="more"
           className="row justify-content-center align-items-start gap-3 mt-5 pt-5 mx-0"
         >
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+            className="currentPosition mb-3 py-2 col-12"
+          >
+            <h2 className="mb-2">{t("section_3_title")}</h2>
+            <Link href={"https://dokkan.agency/"} target="_blank">
+              <Image
+                src="/dokkanLogo.webp"
+                alt="dokkan agency logo"
+                width={isMobile ? 200 : 300}
+                height={isMobile ? 80 : 100}
+              />
+            </Link>
+          </motion.div>
           <div
             className="spotLightCards col-sm-12 col-md-12 col-lg-12 row justify-content-center align-items-center gap-1 m-0"
             dir={locale === "ar" ? "rtl" : "ltr"}
@@ -93,24 +111,6 @@ function About() {
           >
             <ProcessComponent />
           </div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-            className="currentPosition mb-3 col-12"
-          >
-            <h2 className="mb-2">{t("section_3_title")}</h2>
-            <Link href={"https://dokkan.agency/"} target="_blank">
-              <Image
-                src="/dokkanLogo.webp"
-                alt="dokkan agency logo"
-                width={isMobile ? 200 : 300}
-                height={isMobile ? 80 : 100}
-              />
-            </Link>
-          </motion.div>
         </div>
       </section>
     </>
