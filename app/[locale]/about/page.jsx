@@ -77,7 +77,7 @@ function About() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-            className="currentPosition mb-3 py-2 col-12"
+            className="currentPosition my-3 py-3 col-12"
           >
             <h2 className="mb-2">{t("section_3_title")}</h2>
             <Link href={"https://dokkan.agency/"} target="_blank">

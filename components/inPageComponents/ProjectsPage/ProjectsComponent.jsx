@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image from "next/image";
@@ -82,26 +82,16 @@ function ProjectsComponent() {
                 <FaArrowUpRightFromSquare />
               </span>
               <div className="p-0 img">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={displayImage}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2, ease: "easeInOut" }}
-                  >
-                    <Image
-                      src={displayImage}
-                      alt={t(project.title)}
-                      width={500}
-                      height={isMobile ? 150 : 300}
-                      priority
-                      loading="eager"
-                      quality={85}
-                      onClick={() => toProductDetails(project.id)}
-                    />
-                  </motion.div>
-                </AnimatePresence>
+                <Image
+                  src={displayImage}
+                  alt={t(project.title)}
+                  width={500}
+                  height={isMobile ? 150 : 300}
+                  priority
+                  loading="eager"
+                  quality={85}
+                  onClick={() => toProductDetails(project.id)}
+                />
               </div>
               <div className="py-2 px-1 details">
                 <h3 className="mb-2">{t(project.title)}</h3>

@@ -117,7 +117,7 @@ function ContactForm() {
           <Image
             src="/avatar/upperBody.webp"
             alt="character"
-            width={isMobile ? 250 : 300}
+            width={isMobile ? 300 : 350}
             height={isMobile ? 250 : 300}
             priority
             quality={85}
