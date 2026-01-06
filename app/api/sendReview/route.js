@@ -15,8 +15,8 @@ export async function POST(req) {
     const mailToSelf = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
-      subject: `new review added from ${name}`,
-      text: `Name: ${name}\nRate:${rate}\nNote:${note}`,
+      subject: `${rate}⭐ Received From ${name}`,
+      text: `Name: ${name}\nRate:${rate}⭐\nNote:${note}`,
     };
 
     await transporter.sendMail(mailToSelf);
