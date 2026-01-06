@@ -275,6 +275,157 @@
         "/projects/dokkan/4.webp"
       ],
       "link": "https://dokkan.agency/"
+    },
+    {
+      "id": 16,
+      "title": "16.title",
+      "tags": ["tags.ecommerce"],
+      "description": "16.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/so-brand/1.webp",
+      "images": [
+        "/projects/so-brand/1.webp",
+        "/projects/so-brand/2.webp",
+        "/projects/so-brand/3.webp",
+        "/projects/so-brand/4.webp",
+        "/projects/so-brand/5.webp"
+      ],
+      "link": "https://so.dokkan-ai.fun/"
+    },
+    {
+      "id": 17,
+      "title": "17.title",
+      "tags": ["tags.ecommerce"],
+      "description": "17.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/a3da/1.webp",
+      "images": [
+        "/projects/a3da/1.webp",
+        "/projects/a3da/2.webp",
+        "/projects/a3da/3.webp",
+        "/projects/a3da/4.webp",
+        "/projects/a3da/5.webp",
+        "/projects/a3da/6.webp"
+      ],
+      "link": "https://a3daunderground.com/"
+    },
+    {
+      "id": 18,
+      "title": "18.title",
+      "tags": ["tags.ecommerce"],
+      "description": "18.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/leader/1.webp",
+      "images": [
+        "/projects/leader/1.webp",
+        "/projects/leader/2.webp",
+        "/projects/leader/3.webp",
+        "/projects/leader/4.webp",
+        "/projects/leader/5.webp",
+        "/projects/leader/6.webp",
+        "/projects/leader/7.webp",
+        "/projects/leader/8.webp",
+        "/projects/leader/9.webp"
+      ],
+      "link": "https://leadercompany-eg.com/"
+    },
+    {
+      "id": 19,
+      "title": "19.title",
+      "tags": ["tags.ecommerce"],
+      "description": "19.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/dermanes/1.webp",
+      "images": [
+        "/projects/dermanes/1.webp",
+        "/projects/dermanes/2.webp",
+        "/projects/dermanes/3.webp",
+        "/projects/dermanes/4.webp",
+        "/projects/dermanes/5.webp",
+        "/projects/dermanes/6.webp",
+        "/projects/dermanes/7.webp",
+        "/projects/dermanes/8.webp",
+        "/projects/dermanes/9.webp"
+      ],
+      "link": "https://dermanes.com/"
+    },
+    {
+      "id": 20,
+      "title": "20.title",
+      "tags": ["tags.ecommerce"],
+      "description": "20.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/silver-pure/1.webp",
+      "images": [
+        "/projects/silver-pure/1.webp",
+        "/projects/silver-pure/2.webp",
+        "/projects/silver-pure/3.webp",
+        "/projects/silver-pure/4.webp",
+        "/projects/silver-pure/5.webp",
+        "/projects/silver-pure/6.webp",
+        "/projects/silver-pure/7.webp"
+      ],
+      "link": "https://silverpure-eg.com/"
+    },
+    {
+      "id": 21,
+      "title": "21.title",
+      "tags": ["tags.ecommerce"],
+      "description": "21.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/melamine/1.webp",
+      "images": [
+        "/projects/melamine/1.webp",
+        "/projects/melamine/2.webp",
+        "/projects/melamine/3.webp",
+        "/projects/melamine/4.webp",
+        "/projects/melamine/5.webp",
+        "/projects/melamine/6.webp",
+        "/projects/melamine/7.webp"
+      ],
+      "link": "https://shop.alsherifmelamine.com/"
+    },
+    {
+      "id": 22,
+      "title": "22.title",
+      "tags": ["tags.ecommerce"],
+      "description": "22.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/indy/1.webp",
+      "images": [
+        "/projects/indy/1.webp",
+        "/projects/indy/2.webp",
+        "/projects/indy/3.webp",
+        "/projects/indy/4.webp",
+        "/projects/indy/5.webp",
+        "/projects/indy/6.webp"
+      ],
+      "link": "https://indyegypt.com/"
+    },
+    {
+      "id": 23,
+      "title": "23.title",
+      "tags": ["tags.ecommerce"],
+      "description": "23.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/ganna-gallery/1.webp",
+      "images": [
+        "/projects/ganna-gallery/1.webp",
+        "/projects/ganna-gallery/2.webp",
+        "/projects/ganna-gallery/3.webp",
+        "/projects/ganna-gallery/4.webp",
+        "/projects/ganna-gallery/5.webp",
+        "/projects/ganna-gallery/6.webp"
+      ],
+      "link": "https://gannagallery.com/"
     }
   ]
 }
