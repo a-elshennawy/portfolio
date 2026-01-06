@@ -1,5 +1,3 @@
-![my logo](public/avatar/upperBody.webp)
----
 # Ahmed El-Shennawy
 ---
 ### Dependencies
@@ -23,7 +21,6 @@
 - `react : 19.2.1` <== react version
 - `react-dom : 19.2.1` <== dom version
 - `react-icons : 5.5.0` <== lib for iconss
-- `resend : 6.6.0` <== handles emails notifications for requests
 - `swiper : 12.0.3` <== lib for carousels
 - `three : 0.181.2` <== dependency for react bits component
 ---
