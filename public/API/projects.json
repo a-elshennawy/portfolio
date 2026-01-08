@@ -426,6 +426,25 @@
         "/projects/ganna-gallery/6.webp"
       ],
       "link": "https://gannagallery.com/"
+    },
+    {
+      "id": 24,
+      "title": "24.title",
+      "tags": ["tags.ecommerce"],
+      "description": "24.desc",
+      "stack": ["react"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/nahda/1.webp",
+      "images": [
+        "/projects/nahda/1.webp",
+        "/projects/nahda/2.webp",
+        "/projects/nahda/3.webp",
+        "/projects/nahda/4.webp",
+        "/projects/nahda/5.webp",
+        "/projects/nahda/6.webp",
+        "/projects/nahda/7.webp"
+      ],
+      "link": "https://alnahdagroup.com/"
     }
   ]
 }
