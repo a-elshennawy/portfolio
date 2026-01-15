@@ -21,6 +21,7 @@
 
 html,
 body {
+    min-height: 100dvh;
     max-width: 100dvw;
 }
 
@@ -38,11 +39,6 @@ section {
 
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
-    min-height: 100dvh;
 }
 
 h1,
