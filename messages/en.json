@@ -128,6 +128,10 @@
       "title": "nahda group",
       "desc": "an online e-commerce website for kitchen products"
     },
+    "25": {
+      "title": "mekron bot",
+      "desc": "a fully automated whatsapp bot with many features like auto-reply and customized messages and bulk messages to multiple numbers and full integration with google sheets to achieve ability to fetch many number dynamically"
+    },
     "tags": {
       "ecommerce": "e-commerce",
       "shop": "shop",

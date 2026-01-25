@@ -445,6 +445,17 @@
         "/projects/nahda/7.webp"
       ],
       "link": "https://alnahdagroup.com/"
+    },
+    {
+      "id": 25,
+      "title": "25.title",
+      "tags": ["tags.tools", "tags.tech"],
+      "description": "25.desc",
+      "stack": ["javascript", "NextJs"],
+      "role": "roles.front_end_dev",
+      "thumbnail": "/projects/wa-bot/1.webp",
+      "images": ["/projects/wa-bot/1.webp", "/projects/wa-bot/2.webp"],
+      "link": "https://wa.me/201033926177?text=hello%20i%20need%20to%20a%20mekron%20subscription"
     }
   ]
 }
