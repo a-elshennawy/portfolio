@@ -65,70 +65,66 @@
       "desc": "a fully functional managment system including orders, revenue, customer reviews and full CRUD functionality"
     },
     "9": {
-      "title": "clarity tasks",
-      "desc": "a fully functional task manager including BaaS (firebase) totally free, simple to use & track progress with competition leaderboard and many features to discover also full authentication is granted"
-    },
-    "10": {
       "title": "spending tracker",
       "desc": "fully functional based on BaaS money tracking system including changing currencies based on current market rates including authentication and simple design to track spendings from any device"
     },
-    "11": {
+    "10": {
       "title": "muslim day webApp",
       "desc": "an islamic webApp offers accurate prayer times, hijri calender (based on geo location) also a random quran verse offering translation and copying feature"
     },
-    "12": {
+    "11": {
       "title": "socially",
       "desc": "an anonymous social platform where users can post, like, comment without logging in or using their real identity yet they can use necknames or stay incognito and it's managed totally in firebase"
     },
-    "13": {
+    "12": {
       "title": "open lab",
       "desc": "an open source webApp for labs to manage their test fastly and easly including creating pdf version and saving it"
     },
-    "14": {
+    "13": {
       "title": "event card generator",
       "desc": "a free, open source webApp to generate various fully customizable event cards including currently 9 templates, +20 fonts (arabic and english), controlling card dimensions, colors and downloading as pdf or png"
     },
-    "15": {
+    "14": {
       "title": "dokkan website",
       "desc": "the official website fopr dokkan agency that provides information about the agency's products and services"
     },
-    "16": {
+    "15": {
       "title": "so brand",
       "desc": "an online e-commerce website for men clothes"
     },
-    "17": {
+    "16": {
       "title": "a3daunderground",
       "desc": "an online e-commerce website"
     },
-    "18": {
+    "17": {
       "title": "leader company",
       "desc": "an online e-commerce website for cosmetics"
     },
-    "19": {
+    "18": {
       "title": "dermanes",
       "desc": "an online e-commerce website for cosmetics"
     },
-    "20": {
+    "19": {
       "title": "silver pure",
       "desc": "an online e-commerce website for kitchen products"
     },
-    "21": {
+    "20": {
       "title": "alsherif melamine",
       "desc": "an online e-commerce website for kitchen products"
     },
-    "22": {
+    "21": {
       "title": "indyegypt",
       "desc": "an online e-commerce website for cosmetics"
     },
-    "23": {
+    "22": {
       "title": "ganna gallery",
       "desc": "an online e-commerce website for kitchen products"
     },
-    "24": {
+    "23": {
       "title": "nahda group",
       "desc": "an online e-commerce website for kitchen products"
     },
-    "25": {
+    "24": {
       "title": "mekron bot",
       "desc": "a fully automated whatsapp bot with many features like auto-reply and customized messages and bulk messages to multiple numbers and full integration with google sheets to achieve ability to fetch many number dynamically"
     },

@@ -168,28 +168,8 @@
     {
       "id": 9,
       "title": "9.title",
-      "tags": ["tags.webApps", "tags.task_manager", "tags.baas", "tags.tools"],
-      "description": "9.desc",
-      "stack": ["react", "firebase"],
-      "role": "roles.did_it_all",
-      "thumbnail": "/projects/clarityTasks/1.webp",
-      "images": [
-        "/projects/clarityTasks/1.webp",
-        "/projects/clarityTasks/2.webp",
-        "/projects/clarityTasks/3.webp",
-        "/projects/clarityTasks/4.webp",
-        "/projects/clarityTasks/5.webp",
-        "/projects/clarityTasks/6.webp",
-        "/projects/clarityTasks/7.webp",
-        "/projects/clarityTasks/8.webp"
-      ],
-      "link": "https://clarity-tasks.pages.dev/"
-    },
-    {
-      "id": 10,
-      "title": "10.title",
       "tags": ["tags.webApps", "tags.finance", "tags.baas", "tags.tools"],
-      "description": "10.desc",
+      "description": "9.desc",
       "stack": ["react", "firebase"],
       "role": "roles.did_it_all",
       "thumbnail": "/projects/spendingTracker/1.webp",
@@ -204,10 +184,10 @@
       "link": "https://spends-tracker.pages.dev/"
     },
     {
-      "id": 11,
-      "title": "11.title",
+      "id": 10,
+      "title": "10.title",
       "tags": ["tags.webApps", "tags.muslim", "tags.religion"],
-      "description": "11.desc",
+      "description": "10.desc",
       "stack": ["react", "public API"],
       "role": "roles.did_it_all",
       "thumbnail": "/projects/muslimDay/1.webp",
@@ -215,10 +195,10 @@
       "link": "https://muslim-day.pages.dev/"
     },
     {
-      "id": 12,
-      "title": "12.title",
+      "id": 11,
+      "title": "11.title",
       "tags": ["tags.webApps", "tags.social_media"],
-      "description": "12.desc",
+      "description": "11.desc",
       "stack": ["react", "firebase"],
       "role": "roles.did_it_all",
       "thumbnail": "/projects/socially/1.webp",
@@ -230,10 +210,10 @@
       "link": "https://socially.pages.dev/"
     },
     {
-      "id": 13,
-      "title": "13.title",
+      "id": 12,
+      "title": "12.title",
       "tags": ["tags.webApps", "tags.open_source", "tags.labs", "tags.medical"],
-      "description": "13.desc",
+      "description": "12.desc",
       "stack": ["react", "js2pdf", "html2canvas"],
       "role": "i did it all",
       "thumbnail": "/projects/openLab/1.webp",
@@ -245,10 +225,10 @@
       "link": "https://open-source-lab.pages.dev/"
     },
     {
-      "id": 14,
-      "title": "14.title",
+      "id": 13,
+      "title": "13.title",
       "tags": ["tags.webApps", "tags.tool"],
-      "description": "14.desc",
+      "description": "13.desc",
       "stack": ["nextJs"],
       "role": "roles.did_it_all",
       "thumbnail": "/projects/eventCards/1.webp",
@@ -261,10 +241,10 @@
       "link": "https://event-cards.pages.dev/"
     },
     {
-      "id": 15,
-      "title": "15.title",
+      "id": 14,
+      "title": "14.title",
       "tags": ["tags.agency", "tags.ecommerce", "tags.portfolio"],
-      "description": "15.desc",
+      "description": "14.desc",
       "stack": ["nextJs"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/dokkan/1.webp",
@@ -277,10 +257,10 @@
       "link": "https://dokkan.agency/"
     },
     {
-      "id": 16,
-      "title": "16.title",
+      "id": 15,
+      "title": "15.title",
       "tags": ["tags.ecommerce"],
-      "description": "16.desc",
+      "description": "15.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/so-brand/1.webp",
@@ -294,10 +274,10 @@
       "link": "https://so.dokkan-ai.fun/"
     },
     {
-      "id": 17,
-      "title": "17.title",
+      "id": 16,
+      "title": "16.title",
       "tags": ["tags.ecommerce"],
-      "description": "17.desc",
+      "description": "16.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/a3da/1.webp",
@@ -312,10 +292,10 @@
       "link": "https://a3daunderground.com/"
     },
     {
-      "id": 18,
-      "title": "18.title",
+      "id": 17,
+      "title": "17.title",
       "tags": ["tags.ecommerce"],
-      "description": "18.desc",
+      "description": "17.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/leader/1.webp",
@@ -333,10 +313,10 @@
       "link": "https://leadercompany-eg.com/"
     },
     {
-      "id": 19,
-      "title": "19.title",
+      "id": 18,
+      "title": "18.title",
       "tags": ["tags.ecommerce"],
-      "description": "19.desc",
+      "description": "18.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/dermanes/1.webp",
@@ -354,10 +334,10 @@
       "link": "https://dermanes.com/"
     },
     {
-      "id": 20,
-      "title": "20.title",
+      "id": 19,
+      "title": "19.title",
       "tags": ["tags.ecommerce"],
-      "description": "20.desc",
+      "description": "19.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/silver-pure/1.webp",
@@ -373,10 +353,10 @@
       "link": "https://silverpure-eg.com/"
     },
     {
-      "id": 21,
-      "title": "21.title",
+      "id": 20,
+      "title": "20.title",
       "tags": ["tags.ecommerce"],
-      "description": "21.desc",
+      "description": "20.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/melamine/1.webp",
@@ -392,10 +372,10 @@
       "link": "https://shop.alsherifmelamine.com/"
     },
     {
-      "id": 22,
-      "title": "22.title",
+      "id": 21,
+      "title": "21.title",
       "tags": ["tags.ecommerce"],
-      "description": "22.desc",
+      "description": "21.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/indy/1.webp",
@@ -410,10 +390,10 @@
       "link": "https://indyegypt.com/"
     },
     {
-      "id": 23,
-      "title": "23.title",
+      "id": 22,
+      "title": "22.title",
       "tags": ["tags.ecommerce"],
-      "description": "23.desc",
+      "description": "22.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/ganna-gallery/1.webp",
@@ -428,10 +408,10 @@
       "link": "https://gannagallery.com/"
     },
     {
-      "id": 24,
-      "title": "24.title",
+      "id": 23,
+      "title": "23.title",
       "tags": ["tags.ecommerce"],
-      "description": "24.desc",
+      "description": "23.desc",
       "stack": ["react"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/nahda/1.webp",
@@ -447,10 +427,10 @@
       "link": "https://alnahdagroup.com/"
     },
     {
-      "id": 25,
-      "title": "25.title",
+      "id": 24,
+      "title": "24.title",
       "tags": ["tags.tools", "tags.tech"],
-      "description": "25.desc",
+      "description": "24.desc",
       "stack": ["javascript", "NextJs"],
       "role": "roles.front_end_dev",
       "thumbnail": "/projects/wa-bot/1.webp",
