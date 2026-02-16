@@ -15,6 +15,7 @@ import { TbXboxXFilled } from "react-icons/tb";
 import { FaCheckCircle } from "react-icons/fa";
 import { AnimatePresence, motion } from "motion/react";
 import { useTranslations, useLocale } from "next-intl";
+import SectionLoader from "@/components/UI/SectionLoader/SectionLoader";
 
 function TestmonialsComponent() {
   const [value, setValue] = React.useState(3.5);
@@ -147,7 +148,7 @@ function TestmonialsComponent() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ willChange: "transform, opacity" }}
       >
-        {loading && <Loading />}
+        {loading && <SectionLoader />}
 
         {!loading && testimonials.length === 0 ? (
           <CustomeComponent

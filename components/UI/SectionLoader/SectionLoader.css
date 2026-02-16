@@ -1,0 +1,6 @@
+.sectionLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 18.75rem;
+}
