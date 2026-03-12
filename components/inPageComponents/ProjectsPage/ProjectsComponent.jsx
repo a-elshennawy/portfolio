@@ -69,6 +69,7 @@ function ProjectsComponent() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: project.id * 0.1, ease: "easeOut" }}
               key={project.id}
               className="projectCard glassmorphism col-10 col-md-5 col-lg-3 p-0 m-0"
